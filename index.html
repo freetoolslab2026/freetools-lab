@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name='impact-site-verification' value='955fdbcf-1154-4083-9b26-858f627b74b4'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeTools Lab · Herramientas financieras gratuitas en 4 idiomas</title>
+  <meta name="description" content="Red gratuita de calculadoras financieras y fiscales en español, inglés, alemán y francés. Sin registro. Sin publicidad intrusiva.">
+  <link rel="canonical" href="https://freetools-lab.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- GA4 -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=[TU_ID_GA4]"></script> -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #1E3A5F;
+      --accent: #E05A00;
+      --bg:     #E8EDF2;
+      --border: #C2CDD9;
+      --sidebar:#F4F7FA;
+      --white:  #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      font-family: 'Enriqueta', Georgia, serif;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* ── WRAPPER ── */
+    .wrap {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 28px 3%;
+    }
+
+    /* ── NAV ── */
+    nav {
+      background: var(--navy);
+      border-radius: 10px 10px 0 0;
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+    nav .tagline {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.45);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      padding: 52px 36px 48px;
+      text-align: center;
+      border-bottom: 1.5px solid rgba(255,255,255,.07);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(224,90,0,.28);
+      color: #FFB680;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(36px, 6vw, 60px);
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1.05;
+      letter-spacing: .02em;
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: #FFB680; }
+    .hero p {
+      font-family: 'Enriqueta', serif;
+      font-size: 18px;
+      color: rgba(255,255,255,.65);
+      max-width: 560px;
+      margin: 0 auto 10px;
+      line-height: 1.55;
+    }
+    .hero-tagline {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .2em;
+      color: rgba(255,255,255,.28);
+      text-transform: uppercase;
+      margin-top: 16px;
+    }
+
+    /* ── PORTALS GRID ── */
+    .portals {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+      padding: 40px 36px 48px;
+    }
+    .portals-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: var(--navy);
+      letter-spacing: .06em;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .portals-title::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--accent);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .portals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    /* ── PORTAL CARD ── */
+    .portal-card {
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      background: var(--white);
+    }
+    .portal-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(30,58,95,.12);
+      border-color: var(--accent);
+    }
+    .portal-card-header {
+      padding: 22px 22px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .portal-flag {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      line-height: 1;
+    }
+    .portal-flag.es { background: rgba(255,99,0,.12); }
+    .portal-flag.en { background: rgba(0,120,215,.12); }
+    .portal-flag.de { background: rgba(30,58,95,.12); }
+    .portal-flag.fr { background: rgba(0,85,164,.12); }
+
+    .portal-info { flex: 1; }
+    .portal-lang {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .portal-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      line-height: 1.1;
+    }
+    .portal-market {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: #888;
+      margin-top: 3px;
+    }
+    .portal-tools {
+      padding: 0 22px 20px;
+      flex: 1;
+    }
+    .portal-tools ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .portal-tools li {
+      font-family: 'Enriqueta', serif;
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .portal-tools li::before {
+      content: '›';
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .portal-cta {
+      margin: 0 22px 22px;
+      display: block;
+      background: var(--accent);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 17px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 11px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background .15s;
+    }
+    .portal-card:hover .portal-cta { background: #c44e00; }
+
+    /* ── STATS BAR ── */
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1.5px solid var(--border);
+      justify-content: center;
+    }
+    .stat {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--sidebar);
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px;
+    }
+    .stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      color: var(--navy);
+    }
+    .stat-label {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: #666;
+      line-height: 1.3;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      border-radius: 0 0 10px 10px;
+      padding: 20px 28px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 0;
+      border-top: 1.5px solid rgba(255,255,255,.07);
+    }
+    footer .foot-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    footer a {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.5);
+      text-decoration: none;
+      transition: color .15s;
+    }
+    footer a:hover { color: #FFB680; }
+    footer .copy {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.3);
+    }
+
+    @media (max-width: 860px) {
+      nav { border-radius: 8px 8px 0 0; padding: 12px 16px; }
+      .hero { padding: 36px 20px 32px; }
+      .portals { padding: 28px 16px 36px; }
+      .portals-grid { grid-template-columns: 1fr; }
+      .stats { gap: 8px; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="logo">Free<span>Tools</span> Lab</a>
+    <span class="tagline">Calcula · Decide · Gratis</span>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">4 Idiomas · 35+ Herramientas · Gratis</div>
+    <h1>Herramientas financieras<br><span>para todo el mundo</span></h1>
+    <p>Calculadoras gratuitas para decisiones económicas reales. Sin registro, sin publicidad intrusiva, sin trampa.</p>
+    <div class="hero-tagline">Calcula · Decide · Gratis</div>
+  </div>
+
+  <!-- PORTALS -->
+  <div class="portals">
+
+    <div class="portals-title">Elige tu portal</div>
+
+    <div class="portals-grid">
+
+      <!-- ES -->
+      <a href="/es/" class="portal-card">
+        <div class="portal-card-header">
+          <div class="portal-flag es">🇪🇸</div>
+          <div class="portal-info">
+            <div class="portal-lang">Español</div>
+            <div class="portal-name">Portal ES</div>
+            <div class="portal-market">España · LATAM</div>
+          </div>
+        </div>
+        <div class="portal-tools">
+          <ul>
+            <li>Calculadora de Finiquito 2026</li>
+            <li>Gastos Compra de Piso</li>
+            <li>Consumo Eléctrico del Hogar</li>
+            <li>Simulador Nómina / IRPF</li>
+            <li>Bomba de Calor · Solar y más</li>
+          </ul>
+        </div>
+        <span class="portal-cta">Ir al portal →</span>
+      </a>
+
+      <!-- EN -->
+      <a href="/en/" class="portal-card">
+        <div class="portal-card-header">
+          <div class="portal-flag en">🇺🇸</div>
+          <div class="portal-info">
+            <div class="portal-lang">English</div>
+            <div class="portal-name">Portal EN</div>
+            <div class="portal-market">USA · UK · AU · CA</div>
+          </div>
+        </div>
+        <div class="portal-tools">
+          <ul>
+            <li>Mortgage Calculator (USA)</li>
+            <li>Health Insurance Estimator</li>
+            <li>Dental Insurance Calculator</li>
+            <li>EV vs Gas Car Calculator</li>
+            <li>Student Loan · Retirement and more</li>
+          </ul>
+        </div>
+        <span class="portal-cta">Go to portal →</span>
+      </a>
+
+      <!-- DE -->
+      <a href="/de/" class="portal-card">
+        <div class="portal-card-header">
+          <div class="portal-flag de">🇩🇪</div>
+          <div class="portal-info">
+            <div class="portal-lang">Deutsch</div>
+            <div class="portal-name">Portal DE</div>
+            <div class="portal-market">Deutschland · Österreich · Schweiz</div>
+          </div>
+        </div>
+        <div class="portal-tools">
+          <ul>
+            <li>Abfindungsrechner 2026</li>
+            <li>Wärmepumpen-Kostenrechner</li>
+            <li>Photovoltaik-Rendite-Rechner</li>
+            <li>Elterngeld-Rechner</li>
+            <li>Brutto-Netto-Rechner und mehr</li>
+          </ul>
+        </div>
+        <span class="portal-cta">Zum Portal →</span>
+      </a>
+
+      <!-- FR -->
+      <a href="/fr/" class="portal-card">
+        <div class="portal-card-header">
+          <div class="portal-flag fr">🇫🇷</div>
+          <div class="portal-info">
+            <div class="portal-lang">Français</div>
+            <div class="portal-name">Portal FR</div>
+            <div class="portal-market">France · Belgique · Suisse</div>
+          </div>
+        </div>
+        <div class="portal-tools">
+          <ul>
+            <li>Simulateur Impôt sur le Revenu</li>
+            <li>Simulateur Salaire Net/Brut</li>
+            <li>Calculatrice de prêt immobilier</li>
+            <li>Calculateur d'économies énergie</li>
+            <li>Plus d'outils à venir</li>
+          </ul>
+        </div>
+        <span class="portal-cta">Aller au portail →</span>
+      </a>
+
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-num">35+</span>
+        <span class="stat-label">Herramientas<br>gratuitas</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Idiomas y<br>mercados</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1M+</span>
+        <span class="stat-label">Cálculos<br>realizados</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0 €</span>
+        <span class="stat-label">Sin registro<br>100% gratis</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-links">
+      <a href="/es/privacy-policy">Privacidad</a>
+      <a href="/es/terminos">Términos</a>
+      <a href="/es/sobre-nosotros">Sobre nosotros</a>
+      <a href="/en/privacy-policy">Privacy Policy</a>
+      <a href="/de/datenschutz">Datenschutz</a>
+      <a href="/fr/politique-confidentialite">Confidentialité</a>
+    </div>
+    <span class="copy">© 2026 FreeTools Lab · Herramientas financieras gratuitas</span>
+  </footer>
+
+</div>
+</body>
+</html>

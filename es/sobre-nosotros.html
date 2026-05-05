@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros │ FreeTools Lab</title>
+  <meta name="description" content="Conoce el equipo de FreeTools Lab. Nuestra misión: ofrecer herramientas de cálculo financiero gratuitas, fiables y actualizadas en cuatro idiomas.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://freetools-lab.com/es/sobre-nosotros">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFNMBYBY8B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PFNMBYBY8B');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wfrpg1mgir");
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=[TU_ID_ADSENSE]" crossorigin="anonymous"></script>
+
+  <style>
+    :root {
+      --navy: #1E3A5F;
+      --navy-light: #4A6176;
+      --accent: #E05A00;
+      --bg-outer: #E8EDF2;
+      --bg-inner: #ffffff;
+      --bg-section: #F4F7FA;
+      --border: #C2CDD9;
+      --text: #1a1a2e;
+      --text-muted: #5a6a7a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg-outer);
+      font-family: 'Enriqueta', Georgia, serif;
+      font-size: 17px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrapper { max-width: 1300px; margin: 0 auto; padding: 28px 3%; }
+    .container { background: var(--bg-inner); border: 1.5px solid var(--border); border-radius: 10px; overflow: hidden; }
+
+    nav {
+      background: var(--navy);
+      border-radius: 10px 10px 0 0;
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .nav-logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .nav-links a { font-family: 'Enriqueta', serif; font-size: 14px; color: rgba(255,255,255,0.75); text-decoration: none; transition: color .2s; }
+    .nav-links a:hover { color: #fff; }
+
+    .disclaimer-band {
+      background: #FFF8F0;
+      border: 1.5px solid #F4C07A;
+      border-top: none;
+      padding: 9px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: #7a4a10;
+    }
+
+    .disclaimer-band .icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+
+    .hero {
+      background: var(--navy);
+      padding: 44px 36px 40px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(224,90,0,.28);
+      color: #FFB680;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 50px;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1.05;
+      margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+      font-family: 'Enriqueta', serif;
+      font-size: 17px;
+      color: rgba(255,255,255,.65);
+      margin-bottom: 20px;
+      max-width: 600px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .hero-stat-value {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: #FFB680;
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.55);
+    }
+
+    .hero-meta {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      color: rgba(255,255,255,.5);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 20px;
+    }
+
+    .content-area { padding: 40px 36px; max-width: 860px; }
+
+    .content-area h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 36px 0 14px;
+      padding-left: 14px;
+      border-left: 5px solid var(--accent);
+      border-radius: 2px;
+      line-height: 1.1;
+    }
+
+    .content-area h2:first-of-type { margin-top: 0; }
+    .content-area p { margin-bottom: 16px; font-size: 17px; color: var(--text); }
+    .content-area ul { margin: 12px 0 18px 20px; }
+    .content-area ul li { margin-bottom: 8px; font-size: 16px; }
+    .content-area a { color: var(--accent); text-decoration: underline; }
+    .content-area a:hover { opacity: .8; }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 20px 0 28px;
+    }
+
+    .value-card {
+      background: var(--bg-section);
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .value-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .value-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 6px;
+    }
+
+    .value-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .portals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 16px 0 28px;
+    }
+
+    .portal-card {
+      background: var(--bg-section);
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      text-decoration: none;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .portal-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 8px rgba(224,90,0,.12);
+    }
+
+    .portal-flag {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    .portal-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--navy);
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .portal-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .contact-box {
+      background: var(--navy);
+      border-radius: 8px;
+      padding: 28px 28px;
+      margin: 28px 0;
+      color: #fff;
+    }
+
+    .contact-box h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 16px;
+      color: rgba(255,255,255,.75);
+      margin-bottom: 16px;
+    }
+
+    .contact-box .contact-email {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    .contact-box .contact-email:hover { opacity: .9; }
+
+    .verification-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 16px 0 24px;
+    }
+
+    .verification-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 16px;
+    }
+
+    .check-dot {
+      width: 20px;
+      height: 20px;
+      background: #00C875;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    footer {
+      background: var(--navy);
+      border-radius: 0 0 10px 10px;
+      padding: 28px 36px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
+    .footer-links a { font-family: 'Enriqueta', serif; font-size: 14px; color: rgba(255,255,255,.7); text-decoration: none; }
+    .footer-links a:hover { color: #fff; }
+    .footer-copy { font-family: 'Enriqueta', serif; font-size: 13px; color: rgba(255,255,255,.45); }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 36px; }
+      .content-area { padding: 28px 20px; }
+      nav { padding: 14px 20px; }
+      footer { padding: 22px 20px; }
+      .hero-stats { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+<div class="container">
+
+  <!-- NAV -->
+  <nav>
+    <a href="https://freetools-lab.com/es/" class="nav-logo">FreeTools Lab</a>
+    <div class="nav-links">
+      <a href="https://freetools-lab.com/es/finiquito">Finiquito</a>
+      <a href="https://freetools-lab.com/es/gastos-piso">Gastos Piso</a>
+      <a href="https://freetools-lab.com/es/nomina-irpf">Nómina / IRPF</a>
+      <a href="https://freetools-lab.com/es/consumo-electrico">Consumo Eléctrico</a>
+      <a href="https://freetools-lab.com/es/sobre-nosotros" style="color:#FFB680;">Sobre nosotros</a>
+    </div>
+  </nav>
+
+  <!-- DISCLAIMER -->
+  <div class="disclaimer-band">
+    <div class="icon">⚠</div>
+    <div><strong>Aviso legal:</strong> Esta herramienta tiene fines informativos únicamente. Los resultados son orientativos<br>y no constituyen asesoramiento legal ni financiero. Consulta siempre con un profesional.</div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-badge">Quiénes somos</div>
+    <h1>Sobre Nosotros</h1>
+    <p class="hero-subtitle">Herramientas de cálculo gratuitas, fiables y actualizadas para millones de personas en cuatro idiomas.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-value">35+</span>
+        <span class="hero-stat-label">herramientas gratuitas</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-value">4</span>
+        <span class="hero-stat-label">idiomas (ES · EN · DE · FR)</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-value">0 €</span>
+        <span class="hero-stat-label">siempre gratis, sin registro</span>
+      </div>
+    </div>
+    <div class="hero-meta">Calcula · Decide · Gratis</div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content-area">
+
+    <h2>Nuestra misión</h2>
+    <p>FreeTools Lab nació con una premisa sencilla: las herramientas de cálculo financiero, fiscal y laboral que las personas necesitan para tomar decisiones importantes deberían ser gratuitas, accesibles y fáciles de usar. Sin registro, sin suscripciones y sin barreras.</p>
+    <p>Creamos calculadoras para responder las preguntas que más importan en la vida financiera cotidiana: ¿cuánto me corresponde de finiquito?, ¿cuánto pagaré de hipoteca?, ¿me compensa el seguro dental?, ¿cuánto ahorro con un coche eléctrico? Preguntas reales, respuestas claras.</p>
+
+    <h2>Nuestros valores</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">🎯</div>
+        <div class="value-title">Precisión</div>
+        <div class="value-desc">Todos los cálculos se basan en fuentes oficiales: BOE, AEAT, Seguridad Social, CFPB, y se actualizan anualmente.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🔒</div>
+        <div class="value-title">Privacidad</div>
+        <div class="value-desc">Los cálculos se procesan en tu navegador. No almacenamos los datos que introduces en ningún servidor.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🌍</div>
+        <div class="value-title">Accesibilidad</div>
+        <div class="value-desc">Disponible en español, inglés, alemán y francés. Sin registro, sin paywall, sin obstáculos.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">📋</div>
+        <div class="value-title">Transparencia</div>
+        <div class="value-desc">Explicamos la fórmula detrás de cada cálculo. Sabemos lo que calcula, y por qué.</div>
+      </div>
+    </div>
+
+    <h2>Los cuatro portales</h2>
+    <p>FreeTools Lab opera como una red de cuatro portales especializados, cada uno adaptado a su mercado:</p>
+    <div class="portals-grid">
+      <a href="https://freetools-lab.com/es/" class="portal-card">
+        <div class="portal-flag">🇪🇸</div>
+        <div class="portal-name">Portal ES</div>
+        <div class="portal-desc">España y LATAM · Finiquito, IRPF, hipoteca, electricidad</div>
+      </a>
+      <a href="https://freetools-lab.com/en/" class="portal-card">
+        <div class="portal-flag">🇺🇸</div>
+        <div class="portal-name">Portal EN</div>
+        <div class="portal-desc">USA, UK, AU, CA · Mortgage, health insurance, EV calculator</div>
+      </a>
+      <a href="https://freetools-lab.com/de/" class="portal-card">
+        <div class="portal-flag">🇩🇪</div>
+        <div class="portal-name">Portal DE</div>
+        <div class="portal-desc">DE, AT, CH · Abfindung, Steuer, Wärmepumpe</div>
+      </a>
+      <a href="https://freetools-lab.com/fr/" class="portal-card">
+        <div class="portal-flag">🇫🇷</div>
+        <div class="portal-name">Portal FR</div>
+        <div class="portal-desc">FR, BE, CH · Impôt, salaire net/brut, immobilier</div>
+      </a>
+    </div>
+
+    <h2>Cómo nos mantenemos</h2>
+    <p>FreeTools Lab es un proyecto completamente gratuito para el usuario. Generamos ingresos mediante:</p>
+    <ul>
+      <li><strong>Publicidad contextual</strong> a través de Google AdSense (anuncios relevantes para el contenido de cada herramienta).</li>
+      <li><strong>Afiliación</strong>: algunos enlaces del sitio son enlaces de afiliado. Si contratas un servicio a través de ellos, recibimos una pequeña comisión sin coste adicional para ti. Esto nunca influye en los cálculos ni en el contenido editorial.</li>
+      <li><strong>Newsletter</strong>: nuestra newsletter gratuita <em>Free Tools Weekly</em> incluye patrocinadores seleccionados.</li>
+    </ul>
+    <p>Este modelo nos permite mantener todas las herramientas gratuitas e independientes, sin cobrar al usuario.</p>
+
+    <h2>Nuestros estándares editoriales</h2>
+    <div class="verification-list">
+      <div class="verification-item">
+        <div class="check-dot">✓</div>
+        <span>Todas las herramientas citan su fuente oficial (BOE, AEAT, Seguridad Social, CFPB, ADA, etc.).</span>
+      </div>
+      <div class="verification-item">
+        <div class="check-dot">✓</div>
+        <span>Las fórmulas de cálculo se revisan y actualizan cada enero con la nueva normativa fiscal y laboral.</span>
+      </div>
+      <div class="verification-item">
+        <div class="check-dot">✓</div>
+        <span>El contenido editorial está firmado por el «Equipo editorial FreeTools Lab».</span>
+      </div>
+      <div class="verification-item">
+        <div class="check-dot">✓</div>
+        <span>Los resultados de las herramientas siempre se presentan como orientativos, nunca como asesoramiento profesional.</span>
+      </div>
+      <div class="verification-item">
+        <div class="check-dot">✓</div>
+        <span>Los cálculos se procesan en el navegador del usuario. Ningún dato financiero sale de su dispositivo.</span>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <h3>Contacta con nosotros</h3>
+      <p>¿Tienes una pregunta sobre alguna herramienta, has detectado un error en un cálculo o quieres proponernos una colaboración? Escríbenos.</p>
+      <p style="color:rgba(255,255,255,.6);font-size:15px;">Respondemos a todos los mensajes en un plazo de 2-5 días hábiles.</p>
+      <a href="mailto:freetoolslab2026@gmail.com" class="contact-email">✉ Escribirnos</a>
+    </div>
+
+    <p><a href="https://freetools-lab.com/es/">&larr; Volver a las herramientas</a></p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://freetools-lab.com/es/privacy-policy">Política de privacidad</a>
+      <a href="https://freetools-lab.com/es/terminos">Términos de uso</a>
+      <a href="https://freetools-lab.com/es/sobre-nosotros">Sobre nosotros</a>
+    </div>
+    <div class="footer-copy">© 2026 FreeTools Lab · Herramientas financieras gratuitas</div>
+  </footer>
+
+</div>
+</div>
+<!-- COOKIE BANNER — FREETOOLS LAB -->
+<style>
+  #ftl-cookie-banner {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+    background: #1E3A5F; color: #fff;
+    padding: 18px 28px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+    box-shadow: 0 -4px 20px rgba(0,0,0,.25);
+    font-family: 'Enriqueta', Georgia, serif; font-size: 15px; line-height: 1.5;
+  }
+  #ftl-cookie-banner.hidden { display: none; }
+  #ftl-cookie-banner .ftl-cookie-text { flex: 1; min-width: 240px; color: rgba(255,255,255,.85); }
+  #ftl-cookie-banner .ftl-cookie-text a { color: #FFB680; text-decoration: underline; }
+  #ftl-cookie-banner .ftl-cookie-buttons { display: flex; gap: 10px; flex-shrink: 0; }
+  .ftl-btn-accept { background: #E05A00; color: #fff; border: none; padding: 10px 22px; border-radius: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: .5px; cursor: pointer; transition: opacity .2s; }
+  .ftl-btn-accept:hover { opacity: .88; }
+  .ftl-btn-reject { background: transparent; color: rgba(255,255,255,.65); border: 1.5px solid rgba(255,255,255,.3); padding: 10px 18px; border-radius: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: .5px; cursor: pointer; transition: border-color .2s, color .2s; }
+  .ftl-btn-reject:hover { border-color: rgba(255,255,255,.6); color: #fff; }
+  @media (max-width:560px) { #ftl-cookie-banner { padding: 16px 18px; } .ftl-btn-accept,.ftl-btn-reject { padding: 9px 14px; font-size: 15px; } }
+</style>
+<div id="ftl-cookie-banner">
+  <div class="ftl-cookie-text">🍪 Usamos cookies propias y de terceros (Google Analytics, Microsoft Clarity, AdSense) para analítica y publicidad contextual. <a href="/es/privacy-policy">Política de privacidad</a></div>
+  <div class="ftl-cookie-buttons">
+    <button class="ftl-btn-accept" id="ftl-accept-btn">Aceptar</button>
+    <button class="ftl-btn-reject" id="ftl-reject-btn">Solo esenciales</button>
+  </div>
+</div>
+<script>
+(function(){
+  var K="ftl_cookie_consent", D=365;
+  function save(v){var e=new Date();e.setDate(e.getDate()+D);try{localStorage.setItem(K,JSON.stringify({value:v,expires:e.getTime()}))}catch(x){}}
+  function get(){try{var r=localStorage.getItem(K);if(!r)return null;var d=JSON.parse(r);if(Date.now()>d.expires){localStorage.removeItem(K);return null;}return d.value}catch(x){return null}}
+  function hide(){var b=document.getElementById("ftl-cookie-banner");if(b)b.classList.add("hidden")}
+  function allow(){if(typeof gtag==="function")gtag("consent","update",{"analytics_storage":"granted","ad_storage":"granted"})}
+  function deny(){if(typeof gtag==="function")gtag("consent","update",{"analytics_storage":"denied","ad_storage":"denied"})}
+  var c=get();
+  if(c==="accepted"){allow();hide();return;}
+  if(c==="rejected"){deny();hide();return;}
+  document.getElementById("ftl-accept-btn").addEventListener("click",function(){save("accepted");allow();hide();});
+  document.getElementById("ftl-reject-btn").addEventListener("click",function(){save("rejected");deny();hide();});
+})();
+</script>
+<!-- FIN COOKIE BANNER -->
+</body>
+</html>

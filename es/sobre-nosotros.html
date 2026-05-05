@@ -12,12 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFNMBYBY8B"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=[TU_ID_GA4]"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-PFNMBYBY8B');
+    gtag('config', '[TU_ID_GA4]');
   </script>
 
   <!-- Microsoft Clarity -->
@@ -26,11 +26,11 @@
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
       t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wfrpg1mgir");
+    })(window, document, "clarity", "script", "[TU_ID_CLARITY]");
   </script>
 
   <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=[TU_ID_ADSENSE]" crossorigin="anonymous"></script>
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=[TU_ID_ADSENSE]" crossorigin="anonymous"></script> -->
 
   <style>
     :root {
@@ -498,7 +498,7 @@
       <h3>Contacta con nosotros</h3>
       <p>¿Tienes una pregunta sobre alguna herramienta, has detectado un error en un cálculo o quieres proponernos una colaboración? Escríbenos.</p>
       <p style="color:rgba(255,255,255,.6);font-size:15px;">Respondemos a todos los mensajes en un plazo de 2-5 días hábiles.</p>
-      <a href="mailto:freetoolslab2026@gmail.com" class="contact-email">✉ Escribirnos</a>
+      <a href="mailto:[EMAIL_CONTACTO]" class="contact-email">✉ Escribirnos</a>
     </div>
 
     <p><a href="https://freetools-lab.com/es/">&larr; Volver a las herramientas</a></p>
@@ -518,46 +518,21 @@
 </div>
 <!-- COOKIE BANNER — FREETOOLS LAB -->
 <style>
-  #ftl-cookie-banner {
-    position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
-    background: #1E3A5F; color: #fff;
-    padding: 18px 28px;
-    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
-    box-shadow: 0 -4px 20px rgba(0,0,0,.25);
-    font-family: 'Enriqueta', Georgia, serif; font-size: 15px; line-height: 1.5;
-  }
-  #ftl-cookie-banner.hidden { display: none; }
-  #ftl-cookie-banner .ftl-cookie-text { flex: 1; min-width: 240px; color: rgba(255,255,255,.85); }
-  #ftl-cookie-banner .ftl-cookie-text a { color: #FFB680; text-decoration: underline; }
-  #ftl-cookie-banner .ftl-cookie-buttons { display: flex; gap: 10px; flex-shrink: 0; }
-  .ftl-btn-accept { background: #E05A00; color: #fff; border: none; padding: 10px 22px; border-radius: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: .5px; cursor: pointer; transition: opacity .2s; }
-  .ftl-btn-accept:hover { opacity: .88; }
-  .ftl-btn-reject { background: transparent; color: rgba(255,255,255,.65); border: 1.5px solid rgba(255,255,255,.3); padding: 10px 18px; border-radius: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: .5px; cursor: pointer; transition: border-color .2s, color .2s; }
-  .ftl-btn-reject:hover { border-color: rgba(255,255,255,.6); color: #fff; }
-  @media (max-width:560px) { #ftl-cookie-banner { padding: 16px 18px; } .ftl-btn-accept,.ftl-btn-reject { padding: 9px 14px; font-size: 15px; } }
+.cookie-banner{position:fixed;left:18px;right:18px;bottom:18px;z-index:9999;background:#fff;border:1.5px solid #C2CDD9;border-left:5px solid #E05A00;border-radius:10px;box-shadow:0 12px 36px rgba(30,58,95,.18);padding:16px;max-width:760px;margin:0 auto;color:#26384D;font-family:'Enriqueta',serif;font-size:16px;line-height:1.5}.cookie-banner p{margin:0}.cookie-actions{display:flex;gap:10px;margin-top:12px}.cookie-actions button{border:0;border-radius:8px;padding:10px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;cursor:pointer;font-size:16px}.cookie-accept{background:#E05A00;color:#fff}.cookie-reject{background:#EBF0F5;color:#1E3A5F}@media(max-width:560px){.cookie-banner{left:12px;right:12px;bottom:12px}.cookie-actions{flex-direction:column}.cookie-actions button{width:100%}}
 </style>
-<div id="ftl-cookie-banner">
-  <div class="ftl-cookie-text">🍪 Usamos cookies propias y de terceros (Google Analytics, Microsoft Clarity, AdSense) para analítica y publicidad contextual. <a href="/es/privacy-policy">Política de privacidad</a></div>
-  <div class="ftl-cookie-buttons">
-    <button class="ftl-btn-accept" id="ftl-accept-btn">Aceptar</button>
-    <button class="ftl-btn-reject" id="ftl-reject-btn">Solo esenciales</button>
-  </div>
-</div>
+<div id="ftl-cookie-banner" class="cookie-banner"><p><strong>Cookies:</strong> Usamos analítica solo si aceptas. Las cookies esenciales se usan para recordar esta elección.</p><div class="cookie-actions"><button type="button" class="cookie-accept" id="ftl-accept-btn">Aceptar</button><button type="button" class="cookie-reject" id="ftl-reject-btn">Solo esenciales</button></div></div>
 <script>
 (function(){
-  var K="ftl_cookie_consent", D=365;
-  function save(v){var e=new Date();e.setDate(e.getDate()+D);try{localStorage.setItem(K,JSON.stringify({value:v,expires:e.getTime()}))}catch(x){}}
-  function get(){try{var r=localStorage.getItem(K);if(!r)return null;var d=JSON.parse(r);if(Date.now()>d.expires){localStorage.removeItem(K);return null;}return d.value}catch(x){return null}}
-  function hide(){var b=document.getElementById("ftl-cookie-banner");if(b)b.classList.add("hidden")}
-  function allow(){if(typeof gtag==="function")gtag("consent","update",{"analytics_storage":"granted","ad_storage":"granted"})}
-  function deny(){if(typeof gtag==="function")gtag("consent","update",{"analytics_storage":"denied","ad_storage":"denied"})}
-  var c=get();
-  if(c==="accepted"){allow();hide();return;}
-  if(c==="rejected"){deny();hide();return;}
-  document.getElementById("ftl-accept-btn").addEventListener("click",function(){save("accepted");allow();hide();});
-  document.getElementById("ftl-reject-btn").addEventListener("click",function(){save("rejected");deny();hide();});
+function get(){try{return localStorage.getItem('ftl_cookie_consent');}catch(e){return null;}}
+function set(v){try{localStorage.setItem('ftl_cookie_consent',v);}catch(e){}}
+function hide(){var b=document.getElementById('ftl-cookie-banner');if(b){b.style.display='none';}}
+function allow(){if(window.gtag){gtag('consent','update',{'analytics_storage':'granted','ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});}}
+function deny(){if(window.gtag){gtag('consent','update',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied'});}}
+var c=get(); if(c=="accepted"){allow();hide();return;} if(c=="rejected"){deny();hide();return;}
+var a=document.getElementById('ftl-accept-btn'),r=document.getElementById('ftl-reject-btn');
+if(a){a.addEventListener('click',function(){set('accepted');allow();hide();});}
+if(r){r.addEventListener('click',function(){set('rejected');deny();hide();});}
 })();
 </script>
-<!-- FIN COOKIE BANNER -->
 </body>
 </html>

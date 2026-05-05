@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Banner — Snippet para copiar</title>
+  <style>
+    body { font-family: monospace; background: #f4f4f4; padding: 24px; font-size: 14px; }
+    h2 { font-family: sans-serif; margin-bottom: 8px; }
+    p { font-family: sans-serif; font-size: 13px; color: #555; margin-bottom: 16px; }
+    pre { background: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 6px; overflow-x: auto; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h2>Cookie Banner — pegar antes de &lt;/body&gt;</h2>
+  <p>Versión compacta unificada con las herramientas de FreeTools Lab.</p>
+  <pre id="code"></pre>
+  <script>
+    document.getElementById('code').textContent = `<style>
+.cookie-banner{position:fixed;left:18px;right:18px;bottom:18px;z-index:9999;background:#fff;border:1.5px solid #C2CDD9;border-left:5px solid #E05A00;border-radius:10px;box-shadow:0 12px 36px rgba(30,58,95,.18);padding:16px;max-width:760px;margin:0 auto;color:#26384D;font-family:'Enriqueta',serif;font-size:16px;line-height:1.5}.cookie-banner p{margin:0}.cookie-actions{display:flex;gap:10px;margin-top:12px}.cookie-actions button{border:0;border-radius:8px;padding:10px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;cursor:pointer;font-size:16px}.cookie-accept{background:#E05A00;color:#fff}.cookie-reject{background:#EBF0F5;color:#1E3A5F}@media(max-width:560px){.cookie-banner{left:12px;right:12px;bottom:12px}.cookie-actions{flex-direction:column}.cookie-actions button{width:100%}}
+</style>
+<div id="ftl-cookie-banner" class="cookie-banner"><p><strong>Cookies:</strong> Usamos analítica solo si aceptas. Las cookies esenciales se usan para recordar esta elección.</p><div class="cookie-actions"><button type="button" class="cookie-accept" id="ftl-accept-btn">Aceptar</button><button type="button" class="cookie-reject" id="ftl-reject-btn">Solo esenciales</button></div></div>
+<script>
+(function(){
+function get(){try{return localStorage.getItem('ftl_cookie_consent');}catch(e){return null;}}
+function set(v){try{localStorage.setItem('ftl_cookie_consent',v);}catch(e){}}
+function hide(){var b=document.getElementById('ftl-cookie-banner');if(b){b.style.display='none';}}
+function allow(){if(window.gtag){gtag('consent','update',{'analytics_storage':'granted','ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});}}
+function deny(){if(window.gtag){gtag('consent','update',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied'});}}
+var c=get(); if(c=="accepted"){allow();hide();return;} if(c=="rejected"){deny();hide();return;}
+var a=document.getElementById('ftl-accept-btn'),r=document.getElementById('ftl-reject-btn');
+if(a){a.addEventListener('click',function(){set('accepted');allow();hide();});}
+if(r){r.addEventListener('click',function(){set('rejected');deny();hide();});}
+})();
+<\/script>`;
+  </script>
+</body>
+</html>

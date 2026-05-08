@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Insurance Cost Estimator 2026 │ ACA Plans by State</title>
+  <meta name="description" content="Estimate monthly health insurance costs by state, income, family size and ACA metal tier. Includes subsidy estimate, deductibles and out-of-pocket ranges. Free 2026 estimator.">
+  <link rel="canonical" href="https://freetools-lab.com/en/health-insurance">
+  <link rel="alternate" hreflang="en-US" href="https://freetools-lab.com/en/health-insurance">
+  <link rel="alternate" hreflang="en-GB" href="https://freetools-lab.com/en/health-insurance">
+  <link rel="alternate" hreflang="en-AU" href="https://freetools-lab.com/en/health-insurance">
+  <link rel="alternate" hreflang="en-CA" href="https://freetools-lab.com/en/health-insurance">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics GA4 + Microsoft Clarity
+       Consent-first setup. GA4/Clarity scripts are loaded only after cookie acceptance.
+       Fill/check IDs before production:
+       GA4: G-PFNMBYBY8B
+       Clarity: wfrpg1mgir
+    -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {'analytics_storage':'denied','ad_storage':'denied'});
+    window.FTL_GA4_ID = 'G-PFNMBYBY8B';
+    window.FTL_CLARITY_ID = 'wfrpg1mgir';
+  </script>
+
+  <!-- Google AdSense disabled until ad slots are configured
+  <!-- AdSense desactivado hasta configurar slots reales:
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7702007610180764" crossorigin="anonymous"></script> -->
+-->
+  -->
+
+  <style>
+    :root{
+      --accent:#EF4444;
+      --navy:#1E3A5F;
+      --outer:#E8EDF2;
+      --inner:#ffffff;
+      --line:#C2CDD9;
+      --soft:#F4F7FA;
+      --soft2:#EBF0F5;
+      --text:#25364A;
+      --muted:#64748B;
+      --warning:#FFF8F0;
+      --warning-line:#F4C07A;
+      --success:#00C875;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--outer);color:var(--text);font-family:'Enriqueta',serif;font-size:16px;line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    .page{max-width:1300px;margin:0 auto;padding:28px 3%}
+    .shell{background:var(--inner);border:1.5px solid var(--line);border-radius:10px;overflow:hidden}
+    .topnav{background:var(--navy);border-radius:10px 10px 0 0;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:31px;letter-spacing:.7px;color:#fff;line-height:1}
+    .navlinks{display:flex;gap:18px;flex-wrap:wrap;color:rgba(255,255,255,.68);font-size:14px}
+    .navlinks a:hover{color:#fff}
+    .legal-band{background:#FFF8F0;border:1.5px solid #F4C07A;border-top:none;padding:9px 24px;display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#49331f}
+    .legal-icon{width:18px;height:18px;min-width:18px;border-radius:50%;background:var(--accent);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:900;display:flex;align-items:center;justify-content:center;line-height:1;margin-top:2px}
+    .hero{background:var(--navy);padding:42px 24px 36px;color:#fff}
+    .badge{display:inline-block;background:rgba(239,68,68,.28);color:#FFB4B4;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.6px;font-size:14px;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+    h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:50px;line-height:.95;margin:0 0 12px;letter-spacing:.3px;color:#fff;max-width:880px}
+    .hero p{font-size:17px;color:rgba(255,255,255,.65);max-width:760px;margin:0 0 18px}
+    .tagline{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;font-size:13px;color:rgba(255,255,255,.32);margin-bottom:20px}
+    .metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:920px}
+    .metric{border:1.5px solid rgba(255,255,255,.14);border-radius:8px;padding:10px 12px;background:rgba(255,255,255,.04)}
+    .metric strong{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:18px;display:block;color:#fff;line-height:1.05}
+    .metric span{font-size:12px;color:rgba(255,255,255,.55)}
+    .ad-leader,.ad-rect,.ad-side{display:none;background:#FAFBFC;border:1.5px dashed var(--line);color:var(--muted);align-items:center;justify-content:center;text-align:center;margin:20px auto;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+    .ad-leader{width:728px;max-width:100%;height:90px}
+    .ad-rect,.ad-side{width:300px;max-width:100%;height:250px}
+    .content-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0;border-top:1.5px solid var(--line)}
+    .main{padding:28px 24px 34px;min-width:0}
+    .sidebar{background:var(--soft);border-left:1.5px solid var(--line);min-width:0}
+    .side-head{background:var(--soft2);padding:18px;border-bottom:1.5px solid var(--line)}
+    .side-head strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:22px;color:var(--navy);line-height:1}
+    .side-head span{font-size:12px;color:var(--muted)}
+    .side-body{padding:18px}
+    .section-title{display:flex;align-items:center;gap:9px;margin:0 0 16px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:30px;line-height:1;color:var(--navy)}
+    .section-title:before{content:"";width:5px;height:28px;background:var(--accent);border-radius:2px;display:inline-block}
+    .panel{border:1.5px solid var(--line);border-radius:10px;background:#fff;padding:20px;margin-bottom:20px}
+    .input-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+    label{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:16px;color:var(--navy);margin-bottom:6px}
+    input,select{width:100%;border:1.5px solid var(--line);border-radius:8px;padding:11px 12px;font-family:'Enriqueta',serif;font-size:15px;background:#fff;color:var(--text)}
+    input:focus,select:focus{outline:2px solid rgba(239,68,68,.22);border-color:var(--accent)}
+    .help{font-size:12px;color:var(--muted);margin-top:5px}
+    .btn{width:100%;border:0;border-radius:8px;background:var(--accent);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:20px;letter-spacing:.5px;padding:13px 18px;cursor:pointer;margin:4px 0 18px}
+    .btn:hover{filter:brightness(.96)}
+    .error{display:none;margin:0 0 14px;color:#E05A00;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:16px}
+    .calc-note{background:rgba(30,58,95,.05);border:1.5px solid rgba(30,58,95,.12);border-radius:10px;padding:14px 16px;color:#40536A;font-size:14px;margin-bottom:20px}
+    .result-box{display:none;border-left:4px solid var(--accent);background:var(--soft);border-radius:8px;padding:18px;margin-bottom:20px}
+    .result-box .big{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:54px;line-height:.95;color:var(--accent);margin:6px 0}
+    .result-box .small{font-size:13px;color:var(--muted)}
+    .table-wrap{overflow-x:auto;border:1.5px solid var(--line);border-radius:10px;background:#fff;margin-top:14px}
+    table{width:100%;border-collapse:collapse;min-width:680px}
+    th,td{border-bottom:1.5px solid var(--line);padding:11px 12px;text-align:left;font-size:14px;vertical-align:top}
+    th{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:16px;color:var(--navy);background:var(--soft2)}
+    tr:last-child td{border-bottom:none}
+    .tier-name{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:18px;color:var(--navy)}
+    .recommendation{border:1.5px solid rgba(239,68,68,.28);background:rgba(239,68,68,.06);border-radius:10px;padding:15px;margin-top:15px}
+    .recommendation strong{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:22px;color:var(--navy)}
+    .answer{background:rgba(30,58,95,.05);border:1.5px solid rgba(30,58,95,.12);border-radius:10px;padding:17px 18px;margin:20px 0;font-size:16px}
+    .answer strong{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:21px;color:var(--navy)}
+    .faq-item{border:1.5px solid var(--line);border-radius:8px;margin-bottom:10px;background:#fff;overflow:hidden}
+    .faq-q{width:100%;background:#fff;border:0;padding:13px 14px;text-align:left;display:flex;justify-content:space-between;gap:12px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:18px;color:var(--navy)}
+    .faq-a{display:none;padding:0 14px 14px;color:#40536A;font-size:14px}
+    .faq-item.open .faq-a{display:block}
+    .faq-item.open .faq-q span:last-child{transform:rotate(45deg)}
+    .beehiiv-box{display:none;border:1.5px solid var(--line);border-radius:10px;background:#fff;padding:18px;margin:20px 0;text-align:center}
+    .beehiiv-box strong{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:24px;color:var(--navy)}
+    .gdpr{display:flex;align-items:flex-start;gap:8px;justify-content:center;margin:12px 0;font-size:12px;color:var(--muted)}
+    .gdpr input{width:auto;margin-top:3px}
+    .kofi{display:block;text-align:center;background:var(--navy);color:#fff;border-radius:8px;padding:13px 18px;margin:20px 0 0;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:20px}
+    .side-section{margin-bottom:22px}
+    .side-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:22px;color:var(--navy);line-height:1;margin:0 0 11px}
+    .affiliate-card{border:1.5px solid var(--line);border-radius:9px;background:#fff;padding:14px;margin-bottom:12px}
+    .affiliate-card strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:20px;color:var(--navy);line-height:1}
+    .affiliate-card span{display:block;color:var(--muted);font-size:13px;margin:6px 0 10px}
+    .affiliate-card a{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;color:var(--accent);font-size:17px}.affiliate-card.disabled{opacity:.75}.affiliate-card.disabled a{pointer-events:none;color:var(--muted)}
+    .tool-list a{display:flex;justify-content:space-between;gap:8px;border-bottom:1.5px solid var(--line);padding:10px 0;color:#344963;font-size:14px}
+    .tool-list a:last-child{border-bottom:none}
+    .check{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#40536A;margin-bottom:9px}
+    .dot{width:9px;height:9px;min-width:9px;background:var(--success);border-radius:50%;margin-top:7px}
+    .author{font-size:12px;color:var(--muted);margin-top:18px}
+    footer{background:var(--navy);border-radius:0 0 10px 10px;color:rgba(255,255,255,.68);padding:22px 24px;text-align:center;font-size:13px}
+    footer a{margin:0 8px;color:rgba(255,255,255,.82)}
+    footer a:hover{color:#fff}.cookie-banner{position:fixed;left:18px;right:18px;bottom:18px;z-index:9999;background:#fff;border:1.5px solid var(--line);border-left:5px solid var(--accent);border-radius:10px;box-shadow:0 12px 36px rgba(30,58,95,.18);padding:16px;max-width:760px;margin:0 auto;color:var(--text)}.cookie-banner p{margin:0 0 12px;font-size:13px}.cookie-actions{display:flex;gap:10px;flex-wrap:wrap}.cookie-actions button{border:0;border-radius:8px;padding:10px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;cursor:pointer}.cookie-accept{background:var(--accent);color:#fff}.cookie-reject{background:var(--soft2);color:var(--navy)}
+    @media(max-width:860px){
+      .page{padding:16px 3%}
+      .content-grid{grid-template-columns:1fr}
+      .sidebar{border-left:none;border-top:1.5px solid var(--line)}
+      .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+      h1{font-size:40px}
+      .input-grid{grid-template-columns:1fr}
+      .topnav{align-items:flex-start}
+    }
+    @media(max-width:520px){
+      .metrics{grid-template-columns:1fr}
+      h1{font-size:35px}
+      .hero,.main,.topnav,footer{padding-left:18px;padding-right:18px}
+      .legal-band{padding-left:18px;padding-right:18px}
+      .result-box .big{font-size:43px}
+    }
+  
+/* Monetización pendiente: ocultar secciones de afiliación sin URLs reales */
+.side-section:has(.affiliate-card a[aria-disabled="true"]){display:none!important}
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+      <nav class="topnav" aria-label="Main navigation">
+        <a href="https://freetools-lab.com/en/" class="logo">FreeTools Lab</a>
+        <div class="navlinks">
+          <a href="https://freetools-lab.com/en/">Calculators</a>
+          <a href="https://freetools-lab.com/en/insurance">Insurance</a>
+          <a href="https://freetools-lab.com/en/mortgage">Mortgage</a>
+          <a href="https://freetools-lab.com/en/about-us">About</a>
+        </div>
+      </nav>
+
+      <div class="legal-band">
+        <div class="legal-icon">!</div>
+        <div><strong>Legal notice:</strong> This tool is for informational purposes only. Results are estimates<br>and do not constitute legal, tax, financial or insurance advice. Always check official sources.</div>
+      </div>
+
+      <header class="hero">
+        <span class="badge">Insurance · USA</span>
+        <h1>Health Insurance Cost Estimator 2026</h1>
+        <p>Estimate ACA health insurance costs by state, income, household size and plan tier. Compare Bronze, Silver, Gold and Platinum ranges after a simplified premium tax credit estimate.</p>
+        <div class="tagline">Calculate · Decide · Free</div>
+        <div class="metrics" aria-label="Trust metrics">
+          <div class="metric"><strong>Updated 2026</strong><span>ACA marketplace estimate</span></div>
+          <div class="metric"><strong>50 states + DC</strong><span>State rules included</span></div>
+          <div class="metric"><strong>Official method</strong><span>IRS · CMS · ASPE</span></div>
+          <div class="metric"><strong>Free</strong><span>No signup required</span></div>
+        </div>
+      </header>
+
+      <!-- AD SLOT: LEADERBOARD 728x90 -->
+      <div class="ad-leader" aria-hidden="true"></div>
+
+      <div class="content-grid">
+        <main class="main">
+          <!-- INICIO BLOQUE INPUTS -->
+          <section class="panel" aria-labelledby="input-title">
+            <h2 class="section-title" id="input-title">Estimate your ACA cost</h2>
+            <div class="input-grid">
+              <div>
+                <label for="age">Age of oldest adult</label>
+                <input id="age" type="number" min="18" max="64" value="35" inputmode="numeric" onfocus="this.select()">
+                <div class="help">ACA adult age rating can vary up to 3:1 except in states with special rules.</div>
+              </div>
+              <div>
+                <label for="members">Household members on tax return</label>
+                <input id="members" type="number" min="1" max="12" value="2" inputmode="numeric" onfocus="this.select()">
+                <div class="help">Used for FPL and premium tax credit eligibility.</div>
+              </div>
+              <div>
+                <label for="covered">People needing coverage</label>
+                <input id="covered" type="number" min="1" max="12" value="2" inputmode="numeric" onfocus="this.select()">
+                <div class="help">Include only people enrolling in Marketplace coverage.</div>
+              </div>
+              <div>
+                <label for="state">State</label>
+                <select id="state">
+                  <option value="AL" data-factor="1.00">Alabama</option><option value="AK" data-factor="1.22">Alaska</option><option value="AZ" data-factor="1.02">Arizona</option><option value="AR" data-factor="0.96">Arkansas</option><option value="CA" data-factor="1.18">California</option><option value="CO" data-factor="1.07">Colorado</option><option value="CT" data-factor="1.10">Connecticut</option><option value="DE" data-factor="1.05">Delaware</option><option value="DC" data-factor="1.12">District of Columbia</option><option value="FL" data-factor="1.08">Florida</option><option value="GA" data-factor="1.01">Georgia</option><option value="HI" data-factor="1.16">Hawaii</option><option value="ID" data-factor="0.94">Idaho</option><option value="IL" data-factor="1.04">Illinois</option><option value="IN" data-factor="0.98">Indiana</option><option value="IA" data-factor="0.95">Iowa</option><option value="KS" data-factor="0.97">Kansas</option><option value="KY" data-factor="0.99">Kentucky</option><option value="LA" data-factor="1.03">Louisiana</option><option value="ME" data-factor="1.11">Maine</option><option value="MD" data-factor="1.09">Maryland</option><option value="MA" data-factor="1.13">Massachusetts</option><option value="MI" data-factor="1.02">Michigan</option><option value="MN" data-factor="1.01">Minnesota</option><option value="MS" data-factor="0.96">Mississippi</option><option value="MO" data-factor="0.98">Missouri</option><option value="MT" data-factor="1.00">Montana</option><option value="NE" data-factor="0.95">Nebraska</option><option value="NV" data-factor="1.14">Nevada</option><option value="NH" data-factor="1.08">New Hampshire</option><option value="NJ" data-factor="1.15">New Jersey</option><option value="NM" data-factor="1.01">New Mexico</option><option value="NY" data-factor="1.17">New York</option><option value="NC" data-factor="1.03">North Carolina</option><option value="ND" data-factor="0.96">North Dakota</option><option value="OH" data-factor="0.99">Ohio</option><option value="OK" data-factor="0.97">Oklahoma</option><option value="OR" data-factor="1.12">Oregon</option><option value="PA" data-factor="1.06">Pennsylvania</option><option value="RI" data-factor="1.09">Rhode Island</option><option value="SC" data-factor="1.02">South Carolina</option><option value="SD" data-factor="0.96">South Dakota</option><option value="TN" data-factor="0.99">Tennessee</option><option value="TX" data-factor="1.04" selected>Texas</option><option value="UT" data-factor="0.98">Utah</option><option value="VT" data-factor="1.07">Vermont</option><option value="VA" data-factor="1.06">Virginia</option><option value="WA" data-factor="1.13">Washington</option><option value="WV" data-factor="0.97">West Virginia</option><option value="WI" data-factor="1.00">Wisconsin</option><option value="WY" data-factor="0.95">Wyoming</option>
+                </select>
+              </div>
+              <div>
+                <label for="income">Annual household income / MAGI ($)</label>
+                <input id="income" type="number" min="0" step="500" value="52000" inputmode="decimal" onfocus="this.select()">
+                <div class="help">Use expected 2026 Modified Adjusted Gross Income.</div>
+              </div>
+              <div>
+                <label for="benchmark">Benchmark Silver premium ($/mo)</label>
+                <input id="benchmark" type="number" min="0" step="1" value="" placeholder="Optional: from HealthCare.gov" inputmode="decimal" onfocus="this.select()">
+                <div class="help">For near-exact results, paste the second-lowest-cost Silver plan premium for your county.</div>
+              </div>
+              <div>
+                <label for="plan">Plan preference</label>
+                <select id="plan">
+                  <option value="not-sure" selected>Not sure</option>
+                  <option value="bronze">Bronze</option>
+                  <option value="silver">Silver</option>
+                  <option value="gold">Gold</option>
+                  <option value="platinum">Platinum</option>
+                </select>
+              </div>
+              <div>
+                <label for="usage">Expected medical use</label>
+                <select id="usage">
+                  <option value="low">Low · preventive/rare visits</option>
+                  <option value="medium" selected>Medium · some visits or prescriptions</option>
+                  <option value="high">High · regular care or expensive meds</option>
+                </select>
+              </div>
+              <div>
+                <label for="tobacco">Tobacco user</label>
+                <select id="tobacco">
+                  <option value="no" selected>No</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <div class="help">Applied only where tobacco rating is allowed.</div>
+              </div>
+              <div>
+                <label for="employer">Affordable employer coverage?</label>
+                <select id="employer">
+                  <option value="no" selected>No / not sure</option>
+                  <option value="yes">Yes</option>
+                </select>
+                <div class="help">Affordable employer coverage can make you ineligible for PTC.</div>
+              </div>
+            </div>
+          </section>
+          <!-- FIN BLOQUE INPUTS -->
+
+          <p id="formError" class="error">Please enter a valid age and household income.</p>
+          <button class="btn" id="calculateBtn" type="button">Calculate health insurance cost</button>
+
+          <!-- INICIO BLOQUE CALCULO -->
+          <section class="calc-note">
+            This estimator uses the 2026 ACA premium tax credit method as closely as possible in a static calculator: 2025 FPL guidelines for 2026 coverage, the IRS Rev. Proc. 2025-25 applicable percentage table, state Medicaid expansion indicators, tobacco-rating limits and federal out-of-pocket maximums. For near-exact results, enter the second-lowest-cost Silver plan premium for your county from HealthCare.gov or your state marketplace.
+          </section>
+          <!-- FIN BLOQUE CALCULO -->
+
+          <!-- INICIO BLOQUE OUTPUTS -->
+          <section class="result-box" id="results" aria-live="polite">
+            <span class="small">Estimated net monthly premium for your recommended tier</span>
+            <div class="big" id="mainCost">$0</div>
+            <span class="small" id="subsidyText">Estimated premium tax credit: $0/month</span>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tier</th>
+                    <th>Gross premium range</th>
+                    <th>Subsidy estimate</th>
+                    <th>Net monthly cost</th>
+                    <th>Deductible range</th>
+                    <th>Out-of-pocket max</th>
+                  </tr>
+                </thead>
+                <tbody id="tierRows"></tbody>
+              </table>
+            </div>
+            <div class="recommendation" id="recommendation"></div>
+          </section>
+          <!-- FIN BLOQUE OUTPUTS -->
+
+          <section class="answer">
+            <strong>How much does health insurance cost per month in 2026?</strong><br>
+            In 2026, many ACA marketplace shoppers may see monthly premiums from under $100 after subsidies to several hundred dollars per person, depending on income, age, state, tobacco use and plan tier. Bronze is usually cheapest monthly, Silver often balances subsidies and coverage, while Gold or Platinum can fit frequent medical use.
+          </section>
+
+          <!-- AD SLOT: RECTANGLE 300x250 -->
+          <div class="ad-rect" aria-hidden="true"></div>
+
+          <section aria-labelledby="faq-title">
+            <h2 class="section-title" id="faq-title">Health insurance FAQ</h2>
+            <div class="faq-item">
+              <button class="faq-q" type="button">What is an ACA premium tax credit?<span>+</span></button>
+              <div class="faq-a">A premium tax credit is a subsidy that can reduce your monthly marketplace premium. Eligibility generally depends on household income, household size, location and access to other affordable coverage.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" type="button">Which ACA metal tier is best?<span>+</span></button>
+              <div class="faq-a">Bronze can fit low expected medical use and a lower monthly budget. Silver is often the default comparison tier and may unlock cost-sharing reductions for eligible households. Gold or Platinum can make sense with frequent care.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" type="button">Does income change my monthly premium?<span>+</span></button>
+              <div class="faq-a">Yes. Marketplace subsidies are income-based, so lower eligible income can mean a larger premium tax credit. A higher income can reduce or eliminate the subsidy.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" type="button">Are these real insurance quotes?<span>+</span></button>
+              <div class="faq-a">No. These are estimates only. Actual quotes depend on county, insurer, household details, tobacco rules, network, plan design and official marketplace data.</div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" type="button">Where should I enroll in ACA coverage?<span>+</span></button>
+              <div class="faq-a">Visit healthcare.gov or your state marketplace for official enrollment, eligibility checks and final plan prices.</div>
+            </div>
+          </section>
+
+          <!-- BEEHIIV DISABLED UNTIL NEWSLETTER IS READY
+          Required production embed only:
+          <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+          <iframe src="https://subscribe-forms.beehiiv.com/fd50de09-ab02-4593-93f8-b1f354e615e2" class="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:560px;height:291px;border-radius:8px;background:transparent;"></iframe>
+          -->
+
+          <a class="kofi" href="https://ko-fi.com/freetoolslab" target="_blank" rel="noopener">If this tool helped you, buy us a coffee</a>
+          <p class="author">FreeTools Lab Editorial Team · Sources: IRS Rev. Proc. 2025-25, CMS, HealthCare.gov, ASPE/HHS, KFF</p>
+        </main>
+
+        <aside class="sidebar">
+          <div class="side-head">
+            <strong>Resources and comparisons</strong>
+            <span>Selected for your situation</span>
+          </div>
+          <div class="side-body">
+            <!-- AD SLOT: SIDEBAR 300x250 -->
+            <div class="ad-side" aria-hidden="true"></div>
+
+            <div class="side-section">
+              <h3 class="side-title">Insurance partners</h3>
+              <!-- AFFILIATE LINKS DISABLED UNTIL REAL TRACKING URLS ARE APPROVED
+              Fill with final partner URLs, rel="sponsored nofollow noopener", and UTM naming before enabling.
+              -->
+              <div class="affiliate-card">
+                <strong>ACA marketplace</strong>
+                <span>Use the official Marketplace or your state exchange for final quotes.</span>
+                <a href="https://www.amazon.com/-/es/Sadhana-Kamat-Cpc-Cpma-Cpc-I/dp/B0GXN8PHQ5?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=FTIAGPGX5BHH&dib=eyJ2IjoiMSJ9.NVcfprX_BEYjvEfGwdIJd10B0YMua84Ec56kv_N3Q7_docRtuXZOKL4q8yg4raettNLRv6zazfCakHq0ozGeW63XGZL2SrTd6i_sRIqCvtutK3kYJgMIc_Eih6WKxox2oCxpUdNOS-DYtQoKnV9LF0hsgxx6jVZY8gVWaQ6_fY4Ne1vZnwWr2OQKTbBHbG9zfiuTplOoDqQ7wCaU4dTkSKw0iZ6cu89-8u4xPRfEXxU.Ou6oDiDNsghd_9TQG-73FiRa6oBnbVwJUqhC8ExDYxM&dib_tag=se&keywords=health+insurance+guide+USA+2026&qid=1778014364&sprefix=health+insurance+guide+usa+2026%2Caps%2C247&sr=8-6&linkCode=ll2&tag=freetoolslab-20&linkId=0198b1420e9d400c0d37e037c2ee2e0a&language=es_US&ref_=as_li_ss_tl" target="_blank" rel="sponsored nofollow noopener">View health insurance guide</a>
+              </div>
+              <div class="affiliate-card disabled">
+                <strong>Licensed broker</strong>
+                <span>Optional future partner slot. Keep disabled until approved.</span>
+                <!-- AFILIADO PENDIENTE: CJ Affiliate — buscar anunciante Licensed broker en members.cj.com -->
+              </div>
+            </div>
+
+            <div class="side-section">
+              <h3 class="side-title">Related tools</h3>
+              <div class="tool-list">
+                <a href="https://freetools-lab.com/en/mortgage">Mortgage calculator <span>›</span></a>
+                <a href="https://freetools-lab.com/en/dental-insurance">Dental insurance calculator <span>›</span></a>
+                <a href="https://freetools-lab.com/en/ev-cost">EV cost calculator <span>›</span></a>
+                <a href="https://freetools-lab.com/en/budget">Monthly budget calculator <span>›</span></a>
+              </div>
+            </div>
+
+            <div class="side-section">
+              <h3 class="side-title">Quick questions</h3>
+              <div class="faq-item">
+                <button class="faq-q" type="button">Is Bronze always cheapest?<span>+</span></button>
+                <div class="faq-a">Usually monthly, but not always overall if you use care often.</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button">What is Silver benchmark?<span>+</span></button>
+                <div class="faq-a">It is the reference plan commonly used to calculate subsidy estimates.</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button">Do children increase cost?<span>+</span></button>
+                <div class="faq-a">Yes, family size affects both premiums and subsidy eligibility.</div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-q" type="button">Can tobacco raise premiums?<span>+</span></button>
+                <div class="faq-a">In many states, yes, though rules vary by state.</div>
+              </div>
+            </div>
+
+            <div class="side-section">
+              <h3 class="side-title">Verification</h3>
+              <div class="check"><span class="dot"></span><span>Uses official marketplace concepts.</span></div>
+              <div class="check"><span class="dot"></span><span>No personal data stored in the calculator.</span></div>
+              <div class="check"><span class="dot"></span><span>Estimate shown before any email form.</span></div>
+              <div class="check"><span class="dot"></span><span>FreeTools Lab editorial review.</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <div>
+          <a href="https://freetools-lab.com/en/privacy-policy">Privacy Policy</a> |
+          <a href="https://freetools-lab.com/en/terms-of-use">Terms of Use</a> |
+          <a href="https://freetools-lab.com/en/about-us">About Us</a>
+        </div>
+        <div>© 2026 FreeTools Lab · Free financial tools</div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+
+    /*
+      DATA SOURCES — update annually before publishing:
+      - Premium Tax Credit 2026 applicable percentages: IRS Rev. Proc. 2025-25.
+      - Coverage year 2026 FPL uses 2025 poverty guidelines: CMS APTC/CSR guidance and ASPE/HHS 2025 guidelines.
+      - 2026 Marketplace out-of-pocket maximum: HealthCare.gov glossary, $10,600 individual / $21,200 family.
+      - Tobacco rating: ACA permits up to 1.5:1 federally; state restrictions based on KFF/healthinsurance.org tracking.
+      - Medicaid expansion status: KFF status tracker, March 2026.
+      - State premium factors below are NOT official quotes. They are fallback relative approximations only.
+        For near-exact results, users should enter the local county benchmark Silver premium.
+    */
+
+    const FPL_2025_FOR_2026 = {
+      contiguous: [0,15650,21150,26650,32150,37650,43150,48650,54150],
+      alaska: [0,19550,26430,33310,40190,47070,53950,60830,67710],
+      hawaii: [0,17990,24320,30650,36980,43310,49640,55970,62300],
+      add: {contiguous:5500, alaska:6880, hawaii:6330}
+    };
+
+    const NO_TOBACCO_SURCHARGE = new Set(['CA','DC','ME','MA','NJ','NM','NY','RI','VT']);
+    const LIMITED_TOBACCO_SURCHARGE = { AR:1.20, CO:1.15, KY:1.40 };
+    const NO_AGE_RATING = new Set(['NY','VT']);
+    const MEDICAID_NON_EXPANSION = new Set(['AL','FL','GA','KS','MS','SC','TN','TX','WI','WY']);
+    const STATE_MARKETPLACES = {
+      CA:'Covered California', CO:'Connect for Health Colorado', CT:'Access Health CT', DC:'DC Health Link',
+      GA:'Georgia Access', ID:'Your Health Idaho', KY:'kynect', ME:'CoverME.gov', MD:'Maryland Health Connection',
+      MA:'MA Health Connector', MN:'MNsure', NV:'Nevada Health Link', NJ:'GetCoveredNJ', NM:'beWellnm',
+      NY:'NY State of Health', PA:'Pennie', RI:'HealthSource RI', VT:'Vermont Health Connect',
+      VA:"Virginia's Insurance Marketplace", WA:'Washington Healthplanfinder'
+    };
+
+    function formatRange(low, high){
+      return money.format(Math.max(0, Math.round(low))) + ' – ' + money.format(Math.max(0, Math.round(high)));
+    }
+
+    function povertyRegion(state){
+      if(state === 'AK') return 'alaska';
+      if(state === 'HI') return 'hawaii';
+      return 'contiguous';
+    }
+
+    function fplFor(region, members){
+      const n = Math.max(1, Math.round(members));
+      if(n <= 8) return FPL_2025_FOR_2026[region][n];
+      return FPL_2025_FOR_2026[region][8] + (n - 8) * FPL_2025_FOR_2026.add[region];
+    }
+
+    function ageFactor(age, state){
+      if(NO_AGE_RATING.has(state)) return 1;
+      if(age < 21) return 0.635;
+      if(age <= 24) return 1.0;
+      if(age <= 30) return 1.135;
+      if(age <= 35) return 1.222;
+      if(age <= 40) return 1.278;
+      if(age <= 45) return 1.444;
+      if(age <= 50) return 1.786;
+      if(age <= 55) return 2.135;
+      if(age <= 60) return 2.714;
+      return 3.0;
+    }
+
+    function applicablePercentage(fplPct){
+      if(fplPct < 100 || fplPct > 400) return null;
+      const bands = [
+        {lo:100, hi:133, p0:0.0210, p1:0.0210},
+        {lo:133, hi:150, p0:0.0314, p1:0.0419},
+        {lo:150, hi:200, p0:0.0419, p1:0.0660},
+        {lo:200, hi:250, p0:0.0660, p1:0.0844},
+        {lo:250, hi:300, p0:0.0844, p1:0.0996},
+        {lo:300, hi:400, p0:0.0996, p1:0.0996}
+      ];
+      const band = bands.find(b => fplPct >= b.lo && fplPct <= b.hi);
+      if(!band) return null;
+      const ratio = band.hi === band.lo ? 0 : (fplPct - band.lo) / (band.hi - band.lo);
+      return band.p0 + ratio * (band.p1 - band.p0);
+    }
+
+    function tobaccoFactor(state, tobacco){
+      if(tobacco !== 'yes') return 1;
+      if(NO_TOBACCO_SURCHARGE.has(state)) return 1;
+      if(LIMITED_TOBACCO_SURCHARGE[state]) return LIMITED_TOBACCO_SURCHARGE[state];
+      return 1.5;
+    }
+
+    function usageRecommendation(preference, usage, fplPct){
+      if(preference !== 'not-sure'){
+        const label = preference.charAt(0).toUpperCase() + preference.slice(1);
+        return [label, 'You selected this tier. Compare the net premium against deductible and expected care before enrolling.'];
+      }
+      if(fplPct >= 100 && fplPct <= 250) return ['Silver', 'Your income may make Silver the strongest starting point because cost-sharing reductions may reduce deductibles and out-of-pocket costs if you qualify.'];
+      if(usage === 'high') return ['Gold', 'Gold often fits regular care, prescriptions or predictable medical spending because the deductible is usually lower than Bronze or Silver.'];
+      if(usage === 'low') return ['Bronze', 'Bronze may fit low expected medical use if you can handle a higher deductible and want the lowest monthly premium.'];
+      return ['Silver', 'Silver is the safest starting comparison tier because it balances premium, deductible and subsidy structure.'];
+    }
+
+    function calculate(){
+      const age = Number(document.getElementById('age').value);
+      const members = Number(document.getElementById('members').value);
+      const covered = Number(document.getElementById('covered').value);
+      const stateSelect = document.getElementById('state');
+      const state = stateSelect.value;
+      const stateFactor = Number(stateSelect.options[stateSelect.selectedIndex].dataset.factor || 1);
+      const income = Number(document.getElementById('income').value);
+      const benchmarkInput = Number(document.getElementById('benchmark').value);
+      const preference = document.getElementById('plan').value;
+      const usage = document.getElementById('usage').value;
+      const tobacco = document.getElementById('tobacco').value;
+      const employer = document.getElementById('employer').value;
+      const error = document.getElementById('formError');
+
+      if(!age || age < 18 || age > 64 || !income || income < 0 || !members || members < 1 || !covered || covered < 1){
+        error.style.display = 'block';
+        document.getElementById('results').style.display = 'none';
+        return;
+      }
+      error.style.display = 'none';
+
+      const region = povertyRegion(state);
+      const fpl = fplFor(region, members);
+      const fplPct = (income / fpl) * 100;
+      const appPct = applicablePercentage(fplPct);
+      const benchmarkEstimate = 510 * ageFactor(age, state) * stateFactor * tobaccoFactor(state, tobacco) * Math.max(1, covered * 0.92);
+      const benchmarkSilver = benchmarkInput > 0 ? benchmarkInput : benchmarkEstimate;
+      const expectedContribution = appPct === null || employer === 'yes' ? benchmarkSilver : (income * appPct) / 12;
+      const subsidy = Math.max(0, benchmarkSilver - expectedContribution);
+
+      const individualOOP = 10600;
+      const familyOOP = 21200;
+      const oopMax = covered > 1 ? familyOOP : individualOOP;
+
+      const tiers = [
+        {key:'bronze', name:'Bronze', factor:0.78, deductible:[6500, Math.min(9450, oopMax)], csr:false},
+        {key:'silver', name:'Silver', factor:1.00, deductible:[3000, 7500], csr:true},
+        {key:'gold', name:'Gold', factor:1.18, deductible:[800, 4500], csr:false},
+        {key:'platinum', name:'Platinum', factor:1.38, deductible:[0, 1500], csr:false}
+      ];
+
+      const rows = tiers.map(t => {
+        const gross = benchmarkSilver * t.factor;
+        const spread = benchmarkInput > 0 ? 0.04 : 0.13;
+        const grossLow = gross * (1 - spread);
+        const grossHigh = gross * (1 + spread);
+        const netLow = Math.max(0, grossLow - subsidy);
+        const netHigh = Math.max(0, grossHigh - subsidy);
+        let dLow = t.deductible[0], dHigh = t.deductible[1];
+        if(t.csr && fplPct >= 100 && fplPct <= 150){ dLow = 0; dHigh = 1200; }
+        else if(t.csr && fplPct <= 200){ dLow = 500; dHigh = 3000; }
+        else if(t.csr && fplPct <= 250){ dLow = 1500; dHigh = 5500; }
+        return {...t, grossLow, grossHigh, netLow, netHigh, deductible: formatRange(dLow, dHigh)};
+      });
+
+      const [recTier, recText] = usageRecommendation(preference, usage, fplPct);
+      const recRow = rows.find(r => r.name === recTier) || rows.find(r => r.key === preference) || rows[1];
+
+      let eligibilityNote = '';
+      if(employer === 'yes'){
+        eligibilityNote = 'Affordable employer coverage selected: premium tax credit is likely unavailable.';
+      } else if(appPct === null && fplPct > 400){
+        eligibilityNote = 'Income is above 400% FPL: under the 2026 scheduled rule, federal PTC is generally unavailable.';
+      } else if(fplPct < 100 && MEDICAID_NON_EXPANSION.has(state)){
+        eligibilityNote = 'Income is below 100% FPL in a non-expansion/partial-expansion state: you may fall into a Medicaid coverage gap. Check your state rules.';
+      } else if(fplPct < 138 && !MEDICAID_NON_EXPANSION.has(state)){
+        eligibilityNote = 'Income may be Medicaid-eligible in this expansion state; Marketplace subsidies may not be the best match.';
+      } else {
+        eligibilityNote = 'Estimated PTC uses IRS 2026 applicable percentage method.';
+      }
+
+      const marketplace = STATE_MARKETPLACES[state] || 'HealthCare.gov';
+      document.getElementById('mainCost').textContent = formatRange(recRow.netLow, recRow.netHigh);
+      document.getElementById('subsidyText').textContent =
+        'Estimated premium tax credit: ' + money.format(Math.round(subsidy)) + '/month · Income: ' + Math.round(fplPct) + '% of FPL · Marketplace: ' + marketplace;
+
+      const tbody = document.getElementById('tierRows');
+      tbody.innerHTML = rows.map(r => `
+        <tr>
+          <td><span class="tier-name">${r.name}</span></td>
+          <td>${formatRange(r.grossLow, r.grossHigh)}</td>
+          <td>${money.format(Math.round(subsidy))}/month</td>
+          <td><strong>${formatRange(r.netLow, r.netHigh)}</strong></td>
+          <td>${r.deductible}</td>
+          <td>${money.format(oopMax)}</td>
+        </tr>
+      `).join('');
+
+      document.getElementById('recommendation').innerHTML =
+        '<strong>Recommendation: ' + recTier + '</strong><br>' + recText +
+        '<br><br><strong>Eligibility note:</strong> ' + eligibilityNote +
+        '<br><em>Use the benchmark Silver input for near-exact county-level estimates. This static tool cannot pull live insurer quotes.</em>';
+      document.getElementById('results').style.display = 'block';
+    }
+
+    document.getElementById('calculateBtn').addEventListener('click', calculate);
+
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.closest('.faq-item').classList.toggle('open');
+      });
+    });
+  </script>
+
+
+  <div id="ftl-cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+    <p><strong>Cookies:</strong> We use analytics only if you accept. Essential cookies are used to remember this choice.</p>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-accept" id="ftl-accept-btn">Accept</button>
+      <button type="button" class="cookie-reject" id="ftl-reject-btn">Essential only</button>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      function get(){try{return localStorage.getItem('ftl_cookie_consent');}catch(e){return null;}}
+      function set(v){try{localStorage.setItem('ftl_cookie_consent',v);}catch(e){}}
+      function hide(){var b=document.getElementById('ftl-cookie-banner'); if(b){b.style.display='none';}}
+      function deny(){if(window.gtag){gtag('consent','update',{'analytics_storage':'denied','ad_storage':'denied'});}}
+      function allow(){
+        if(window.gtag){gtag('consent','update',{'analytics_storage':'granted','ad_storage':'denied'});}
+        if(!document.querySelector('script[data-ftl-ga4]')){
+          var g=document.createElement('script'); g.async=true; g.dataset.ftlGa4='1'; g.src='https://www.googletagmanager.com/gtag/js?id='+window.FTL_GA4_ID; document.head.appendChild(g);
+          g.onload=function(){gtag('js',new Date()); gtag('config',window.FTL_GA4_ID);};
+        }
+        if(window.FTL_CLARITY_ID && !window.clarity){
+          (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script',window.FTL_CLARITY_ID);
+        }
+      }
+      var c=get(); if(c=="accepted"){allow();hide();return;} if(c=="rejected"){deny();hide();return;}
+      document.getElementById("ftl-accept-btn").addEventListener("click",function(){set("accepted");allow();hide();});
+      document.getElementById("ftl-reject-btn").addEventListener("click",function(){set("rejected");deny();hide();});
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What is an ACA premium tax credit?","acceptedAnswer":{"@type":"Answer","text":"A premium tax credit is a subsidy that can reduce your monthly marketplace premium. Eligibility generally depends on household income, household size, location and access to other affordable coverage."}},
+      {"@type":"Question","name":"Which ACA metal tier is best?","acceptedAnswer":{"@type":"Answer","text":"Bronze can fit low expected medical use and a lower monthly budget. Silver is often the default comparison tier and may unlock cost-sharing reductions for eligible households. Gold or Platinum can make sense with frequent care."}},
+      {"@type":"Question","name":"Does income change my monthly premium?","acceptedAnswer":{"@type":"Answer","text":"Yes. Marketplace subsidies are income-based, so lower eligible income can mean a larger premium tax credit. A higher income can reduce or eliminate the subsidy."}},
+      {"@type":"Question","name":"Are these real insurance quotes?","acceptedAnswer":{"@type":"Answer","text":"No. These are estimates only. Actual quotes depend on county, insurer, household details, tobacco rules, network, plan design and official marketplace data."}},
+      {"@type":"Question","name":"Where should I enroll in ACA coverage?","acceptedAnswer":{"@type":"Answer","text":"Visit healthcare.gov or your state marketplace for official enrollment, eligibility checks and final plan prices."}}
+    ]
+  }
+  </script>
+</body>
+</html>

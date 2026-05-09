@@ -42,6 +42,12 @@
     footer .copy { font-size:13px; color:rgba(255,255,255,.3); }
     @media (max-width:860px) { nav { border-radius:8px 8px 0 0; padding:12px 16px; } .hero { padding:34px 20px 30px; } .content { padding:28px 16px 36px; } footer { flex-direction:column; align-items:flex-start; } }
 
+    .cookie-banner{position:fixed;left:18px;right:18px;bottom:18px;z-index:9999;background:#fff;border:1.5px solid var(--border);border-left:5px solid var(--accent);border-radius:10px;box-shadow:0 12px 36px rgba(30,58,95,.18);padding:16px;max-width:760px;margin:0 auto;color:#333}
+    .cookie-actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+    .cookie-actions button{border:0;border-radius:8px;padding:10px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;cursor:pointer}
+    .cookie-accept{background:var(--accent);color:#fff}
+    .cookie-reject{background:#EBF0F5;color:var(--navy)}
+
   </style>
 </head>
 <body>
@@ -67,5 +73,32 @@
     <span class="copy">© 2026 FreeTools Lab</span>
   </footer>
 </div>
+<div id="ftl-cookie-banner" class="cookie-banner"><p><strong>Cookies :</strong> Nous utilisons l’analyse uniquement si vous l’acceptez. Les cookies essentiels mémorisent ce choix.</p><div class="cookie-actions"><button type="button" class="cookie-accept" id="ftl-accept-btn">Accepter</button><button type="button" class="cookie-reject" id="ftl-reject-btn">Essentiels uniquement</button></div></div>
+
+<script>
+(function(){
+window.FTL_GA4_ID='G-PFNMBYBY8B';
+window.FTL_CLARITY_ID='wfrpg1mgir';
+function get(){try{return localStorage.getItem('ftl_cookie_consent');}catch(e){return null;}}
+function set(v){try{localStorage.setItem('ftl_cookie_consent',v);}catch(e){}}
+function hide(){var b=document.getElementById('ftl-cookie-banner');if(b){b.style.display='none';}}
+function deny(){window['ga-disable-'+window.FTL_GA4_ID]=true;}
+function allow(){
+ window['ga-disable-'+window.FTL_GA4_ID]=false;
+ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=window.gtag||gtag;
+ if(!document.querySelector('script[data-ftl-ga4]')){var g=document.createElement('script');g.async=true;g.dataset.ftlGa4='1';g.src='https://www.googletagmanager.com/gtag/js?id='+window.FTL_GA4_ID;document.head.appendChild(g);g.onload=function(){gtag('js',new Date());gtag('config',window.FTL_GA4_ID);};}
+ if(window.FTL_CLARITY_ID&&!window.clarity){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script',window.FTL_CLARITY_ID);}
+}
+var c=get();
+if(c=='accepted'){allow();hide();return;}
+if(c=='rejected'){deny();hide();return;}
+deny();
+var accept=document.getElementById('ftl-accept-btn');
+var reject=document.getElementById('ftl-reject-btn');
+if(accept){accept.addEventListener('click',function(){set('accepted');allow();hide();});}
+if(reject){reject.addEventListener('click',function(){set('rejected');deny();hide();});}
+})();
+</script>
+
 </body>
 </html>

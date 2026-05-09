@@ -306,6 +306,53 @@
       padding: 2px 7px;
     }
 
+    .guides-section {
+      margin-top: 34px;
+      padding-top: 28px;
+      border-top: 1.5px solid var(--border);
+    }
+    .guides-section h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 26px;
+      text-transform: uppercase;
+      color: var(--navy);
+      letter-spacing: .04em;
+      margin-bottom: 8px;
+    }
+    .guides-section p {
+      font-family: 'Enriqueta', serif;
+      font-size: 15px;
+      color: #666;
+      line-height: 1.55;
+      max-width: 760px;
+      margin-bottom: 18px;
+    }
+    .guides-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+    }
+    .guides-links a {
+      display: block;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      background: var(--sidebar);
+      padding: 14px 16px;
+      color: var(--navy);
+      text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      transition: border-color .15s, transform .15s;
+    }
+    .guides-links a:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
     .stats {
       display: flex;
       flex-wrap: wrap;
@@ -490,6 +537,18 @@
       </section>
 
     </div>
+
+
+    <section class="guides-section" aria-labelledby="guidesTitle">
+      <h2 id="guidesTitle">Guías prácticas</h2>
+      <p>Artículos organizados por idioma y temática para entender mejor cada cálculo antes de tomar una decisión.</p>
+      <div class="guides-links">
+        <a href="https://freetools-lab.com/es/articulos/">Guías en español</a>
+        <a href="https://freetools-lab.com/en/articles/">Guides in English</a>
+        <a href="https://freetools-lab.com/de/ratgeber/">Ratgeber auf Deutsch</a>
+        <a href="https://freetools-lab.com/fr/articles/">Guides en français</a>
+      </div>
+    </section>
 
     <div class="stats">
       <div class="stat">

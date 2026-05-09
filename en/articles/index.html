@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides and articles in English</title>
+  <meta name="description" content="Practical guides organized by topic and calculator to help you understand costs, payments, insurance, loans, salary and retirement.">
+  <link rel="canonical" href="https://freetools-lab.com/en/articles/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy:#1E3A5F; --accent:#E05A00; --bg:#E8EDF2; --border:#C2CDD9; --sidebar:#F4F7FA; --white:#ffffff; }
+    body { background:var(--bg); font-family:'Enriqueta', Georgia, serif; color:#333; min-height:100vh; }
+    .wrap { max-width:1300px; margin:0 auto; padding:28px 3%; }
+    nav { background:var(--navy); border-radius:10px 10px 0 0; padding:14px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    .logo { font-family:'Barlow Condensed', sans-serif; font-weight:900; font-size:22px; letter-spacing:.04em; text-transform:uppercase; color:var(--white); text-decoration:none; }
+    .logo span { color:var(--accent); }
+    nav .tagline { font-family:'Enriqueta', serif; font-size:13px; color:rgba(255,255,255,.45); }
+    .hero { background:var(--navy); padding:46px 36px 42px; text-align:center; border-bottom:1.5px solid rgba(255,255,255,.07); }
+    .hero-badge { display:inline-block; background:rgba(224,90,0,.28); color:#FFB680; font-family:'Barlow Condensed', sans-serif; font-weight:700; font-size:13px; letter-spacing:.12em; text-transform:uppercase; padding:4px 14px; border-radius:20px; margin-bottom:18px; }
+    .hero h1 { font-family:'Barlow Condensed', sans-serif; font-weight:900; font-size:clamp(34px, 5vw, 56px); text-transform:uppercase; color:var(--white); line-height:1.05; letter-spacing:.02em; margin-bottom:14px; }
+    .hero p { font-size:17px; color:rgba(255,255,255,.65); max-width:660px; margin:0 auto; line-height:1.55; }
+    .content { background:var(--white); border:1.5px solid var(--border); border-top:none; border-radius:0 0 10px 10px; padding:38px 36px 46px; }
+    .section-title { font-family:'Barlow Condensed', sans-serif; font-weight:900; font-size:24px; text-transform:uppercase; color:var(--navy); letter-spacing:.05em; margin:34px 0 16px; display:flex; align-items:center; gap:10px; }
+    .section-title:first-child { margin-top:0; }
+    .section-title::before { content:''; display:inline-block; width:5px; height:22px; background:var(--accent); border-radius:2px; flex-shrink:0; }
+    .theme { border:1.5px solid var(--border); border-radius:10px; background:var(--sidebar); padding:22px; margin-bottom:20px; }
+    .tool-block { background:var(--white); border:1.5px solid var(--border); border-radius:8px; padding:18px; margin-top:14px; }
+    .tool-block h3 { font-family:'Barlow Condensed', sans-serif; font-weight:900; font-size:22px; color:var(--navy); text-transform:uppercase; letter-spacing:.03em; margin-bottom:4px; }
+    .tool-link { display:inline-block; margin-bottom:12px; color:var(--accent); font-family:'Barlow Condensed', sans-serif; font-weight:700; font-size:15px; text-transform:uppercase; letter-spacing:.05em; text-decoration:none; }
+    .tool-link:hover { text-decoration:underline; }
+    .article-list { list-style:none; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:10px; }
+    .article-list a { display:block; border:1.5px solid var(--border); border-radius:8px; padding:13px 14px; background:#fff; color:#333; text-decoration:none; line-height:1.45; transition:border-color .15s, transform .15s; }
+    .article-list a:hover { border-color:var(--accent); transform:translateY(-2px); }
+    .empty { border:1.5px solid var(--border); border-radius:10px; background:var(--sidebar); padding:22px; color:#555; line-height:1.6; }
+    footer { background:var(--navy); border-radius:0 0 10px 10px; padding:20px 28px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; border-top:1.5px solid rgba(255,255,255,.07); }
+    footer .foot-links { display:flex; flex-wrap:wrap; gap:18px; }
+    footer a { font-size:13px; color:rgba(255,255,255,.5); text-decoration:none; }
+    footer a:hover { color:#FFB680; }
+    footer .copy { font-size:13px; color:rgba(255,255,255,.3); }
+    @media (max-width:860px) { nav { border-radius:8px 8px 0 0; padding:12px 16px; } .hero { padding:34px 20px 30px; } .content { padding:28px 16px 36px; } footer { flex-direction:column; align-items:flex-start; } }
+
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="https://freetools-lab.com/" class="logo">Free<span>Tools</span> Lab</a>
+    <span class="tagline">Calculate · Decide · Free</span>
+  </nav>
+  <div class="hero">
+    <div class="hero-badge">Articles · English</div>
+    <h1>Guides and articles in English</h1>
+    <p>Practical guides organized by topic and calculator to help you understand costs, payments, insurance, loans, salary and retirement.</p>
+  </div>
+  <main class="content">
+      <section class="theme">
+        <h2 class="section-title">Housing and mortgages</h2>
+        <div class="tool-block">
+          <h3>Mortgage Calculator (USA)</h3>
+          <a class="tool-link" href="https://freetools-lab.com/en/mortgage">Open tool</a>
+          <ul class="article-list">
+            <li><a href="https://freetools-lab.com/en/articles/mortgage/how-to-calculate-monthly-mortgage-payment-2026.html">How to Calculate Your Monthly Mortgage Payment in 2026</a></li>
+            <li><a href="https://freetools-lab.com/en/articles/mortgage/what-is-included-in-a-mortgage-payment.html">What Is Included in a Mortgage Payment? Principal, Interest, Taxes, Insurance and PMI</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="theme">
+        <h2 class="section-title">Insurance</h2>
+        <div class="tool-block">
+          <h3>Health Insurance Comparison (USA)</h3>
+          <a class="tool-link" href="https://freetools-lab.com/en/health-insurance">Open tool</a>
+          <ul class="article-list">
+            <li><a href="https://freetools-lab.com/en/articles/health-insurance/how-much-does-health-insurance-cost-per-month-2026.html">How Much Does Health Insurance Cost per Month in 2026?</a></li>
+            <li><a href="https://freetools-lab.com/en/articles/health-insurance/aca-subsidies-premium-tax-credit.html">ACA Subsidies Explained: How Premium Tax Credits Lower Your Health Insurance Cost</a></li>
+          </ul>
+        </div>
+        <div class="tool-block">
+          <h3>Dental Insurance Calculator (USA)</h3>
+          <a class="tool-link" href="https://freetools-lab.com/en/dental-insurance">Open tool</a>
+          <ul class="article-list">
+            <li><a href="https://freetools-lab.com/en/articles/dental-insurance/is-dental-insurance-worth-it-2026.html">Is Dental Insurance Worth It in 2026?</a></li>
+            <li><a href="https://freetools-lab.com/en/articles/dental-insurance/dental-insurance-vs-paying-cash.html">Dental Insurance vs Paying Cash: Which Is Cheaper?</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="theme">
+        <h2 class="section-title">Loans and retirement</h2>
+        <div class="tool-block">
+          <h3>Personal Loan Calculator (USA)</h3>
+          <a class="tool-link" href="https://freetools-lab.com/en/personal-loan">Open tool</a>
+          <ul class="article-list">
+            <li><a href="https://freetools-lab.com/en/articles/personal-loan/how-to-calculate-personal-loan-payment-2026.html">How to Calculate a Personal Loan Payment in 2026</a></li>
+            <li><a href="https://freetools-lab.com/en/articles/personal-loan/personal-loan-apr-vs-interest-rate.html">Personal Loan APR vs Interest Rate: What Is the Difference?</a></li>
+          </ul>
+        </div>
+        <div class="tool-block">
+          <h3>Retirement Calculator (USA)</h3>
+          <a class="tool-link" href="https://freetools-lab.com/en/retirement">Open tool</a>
+          <ul class="article-list">
+            <li><a href="https://freetools-lab.com/en/articles/retirement/how-much-should-i-save-for-retirement-2026.html">How Much Should I Save for Retirement in 2026?</a></li>
+            <li><a href="https://freetools-lab.com/en/articles/retirement/am-i-on-track-for-retirement-income-gap.html">Am I on Track for Retirement? How to Estimate Your Retirement Income Gap</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="theme">
+        <h2 class="section-title">Salary and taxes</h2>
+        <div class="tool-block">
+          <h3>Salary Calculator by State (USA)</h3>
+          <a class="tool-link" href="https://freetools-lab.com/en/salary-calculator">Open tool</a>
+          <ul class="article-list">
+            <li><a href="https://freetools-lab.com/en/articles/salary-calculator/how-to-calculate-take-home-pay-2026.html">How to Calculate Take-Home Pay from Salary in 2026</a></li>
+            <li><a href="https://freetools-lab.com/en/articles/salary-calculator/what-taxes-are-taken-out-of-a-paycheck-2026.html">What Taxes Are Taken Out of a Paycheck in 2026?</a></li>
+          </ul>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <div class="foot-links">
+      <a href="https://freetools-lab.com/en/privacy-policy">Privacy Policy</a>
+      <a href="https://freetools-lab.com/en/terms-of-use">Terms of Use</a>
+      <a href="https://freetools-lab.com/en/about-us">About us</a>
+    </div>
+    <span class="copy">© 2026 FreeTools Lab</span>
+  </footer>
+</div>
+</body>
+</html>

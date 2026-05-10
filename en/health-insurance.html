@@ -116,7 +116,7 @@
     .affiliate-card{border:1.5px solid var(--line);border-radius:9px;background:#fff;padding:14px;margin-bottom:12px}
     .affiliate-card strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:20px;color:var(--navy);line-height:1}
     .affiliate-card span{display:block;color:var(--muted);font-size:13px;margin:6px 0 10px}
-    .affiliate-card a{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;color:var(--accent);font-size:17px}.affiliate-card a.affiliate-link{color:var(--accent);pointer-events:auto}.affiliate-card.disabled{opacity:.75}.affiliate-card.disabled a{pointer-events:none;color:var(--muted)}
+    .affiliate-card a{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;color:var(--accent);font-size:17px}.affiliate-card a.affiliate-link{color:var(--accent);pointer-events:auto}.affiliate-card.disabled{opacity:.75}.affiliate-card.disabled a{pointer-events:auto;color:var(--muted)}
     .tool-list a{display:flex;justify-content:space-between;gap:8px;border-bottom:1.5px solid var(--line);padding:10px 0;color:#344963;font-size:14px}
     .tool-list a:last-child{border-bottom:none}
     .check{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#40536A;margin-bottom:9px}
@@ -141,9 +141,11 @@
       .legal-band{padding-left:18px;padding-right:18px}
       .result-box .big{font-size:43px}
     }
-  
-/* Monetización pendiente: ocultar secciones de afiliación sin URLs reales */
-.side-section:has(.affiliate-card a[aria-disabled="true"]){display:none!important}
+
+/* FTL affiliate stability patch: stable active/pending affiliate cards */
+.affiliate-card.amazon-active{display:block!important;opacity:1!important}
+.affiliate-card.amazon-active a,.affiliate-card a.affiliate-link{pointer-events:auto!important;color:var(--accent)!important}
+.affiliate-card.pending-affiliate,.affiliate-card.disabled:not(.amazon-active){display:none!important}
 </style>
 </head>
 <body>
@@ -153,7 +155,7 @@
         <a href="https://freetools-lab.com/en/" class="logo">FreeTools Lab</a>
         <div class="navlinks">
           <a href="https://freetools-lab.com/en/">Calculators</a>
-          <a href="https://freetools-lab.com/en/insurance">Insurance</a>
+          <a href="https://freetools-lab.com/en/health-insurance">Insurance</a>
           <a href="https://freetools-lab.com/en/mortgage">Mortgage</a>
           <a href="https://freetools-lab.com/en/about-us">About</a>
         </div>
@@ -344,16 +346,16 @@
               <!-- AFFILIATE LINKS DISABLED UNTIL REAL TRACKING URLS ARE APPROVED
               Fill with final partner URLs, rel="sponsored nofollow noopener", and UTM naming before enabling.
               -->
-              <div class="affiliate-card">
-                <strong>ACA marketplace</strong>
-                <span>Use the official Marketplace or your state exchange for final quotes.</span>
-                <a class="affiliate-link" href="https://www.amazon.com/-/es/Sadhana-Kamat-Cpc-Cpma-Cpc-I/dp/B0GXN8PHQ5?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=FTIAGPGX5BHH&dib=eyJ2IjoiMSJ9.NVcfprX_BEYjvEfGwdIJd10B0YMua84Ec56kv_N3Q7_docRtuXZOKL4q8yg4raettNLRv6zazfCakHq0ozGeW63XGZL2SrTd6i_sRIqCvtutK3kYJgMIc_Eih6WKxox2oCxpUdNOS-DYtQoKnV9LF0hsgxx6jVZY8gVWaQ6_fY4Ne1vZnwWr2OQKTbBHbG9zfiuTplOoDqQ7wCaU4dTkSKw0iZ6cu89-8u4xPRfEXxU.Ou6oDiDNsghd_9TQG-73FiRa6oBnbVwJUqhC8ExDYxM&dib_tag=se&keywords=health+insurance+guide+USA+2026&qid=1778014364&sprefix=health+insurance+guide+usa+2026%2Caps%2C247&sr=8-6&linkCode=ll2&tag=freetoolslab-20&linkId=0198b1420e9d400c0d37e037c2ee2e0a&language=es_US&ref_=as_li_ss_tl" target="_blank" rel="sponsored nofollow noopener" style="pointer-events:auto;color:var(--accent)">View health insurance guide</a>
-              </div>
-              <div class="affiliate-card disabled">
-                <strong>Licensed broker</strong>
-                <span>Optional future partner slot. Keep disabled until approved.</span>
-                <!-- AFILIADO PENDIENTE: CJ Affiliate — buscar anunciante Licensed broker en members.cj.com -->
-              </div>
+              <div class="affiliate-card amazon-active">
+<strong>ACA marketplace</strong>
+<span>Use the official Marketplace or your state exchange for final quotes.</span>
+<a class="affiliate-link" href="https://www.amazon.com/-/es/Sadhana-Kamat-Cpc-Cpma-Cpc-I/dp/B0GXN8PHQ5?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=FTIAGPGX5BHH&amp;dib=eyJ2IjoiMSJ9.NVcfprX_BEYjvEfGwdIJd10B0YMua84Ec56kv_N3Q7_docRtuXZOKL4q8yg4raettNLRv6zazfCakHq0ozGeW63XGZL2SrTd6i_sRIqCvtutK3kYJgMIc_Eih6WKxox2oCxpUdNOS-DYtQoKnV9LF0hsgxx6jVZY8gVWaQ6_fY4Ne1vZnwWr2OQKTbBHbG9zfiuTplOoDqQ7wCaU4dTkSKw0iZ6cu89-8u4xPRfEXxU.Ou6oDiDNsghd_9TQG-73FiRa6oBnbVwJUqhC8ExDYxM&amp;dib_tag=se&amp;keywords=health+insurance+guide+USA+2026&amp;qid=1778014364&amp;sprefix=health+insurance+guide+usa+2026%2Caps%2C247&amp;sr=8-6&amp;linkCode=ll2&amp;tag=freetoolslab-20&amp;linkId=0198b1420e9d400c0d37e037c2ee2e0a&amp;language=es_US&amp;ref_=as_li_ss_tl" rel="sponsored nofollow noopener" style="pointer-events:auto!important;color:var(--accent)!important" target="_blank">View health insurance guide</a>
+</div>
+              <div class="affiliate-card pending-affiliate" style="display:none!important">
+<strong>Licensed broker</strong>
+<span>Optional future partner slot. Keep disabled until approved.</span>
+<!-- AFILIADO PENDIENTE: CJ Affiliate — buscar anunciante Licensed broker en members.cj.com -->
+</div>
             </div>
 
             <div class="side-section">
@@ -361,8 +363,8 @@
               <div class="tool-list">
                 <a href="https://freetools-lab.com/en/mortgage">Mortgage calculator <span>›</span></a>
                 <a href="https://freetools-lab.com/en/dental-insurance">Dental insurance calculator <span>›</span></a>
-                <a href="https://freetools-lab.com/en/ev-cost">EV cost calculator <span>›</span></a>
-                <a href="https://freetools-lab.com/en/budget">Monthly budget calculator <span>›</span></a>
+                <a href="https://freetools-lab.com/en/health-insurance">Personal loan calculator <span>›</span></a>
+                <a href="https://freetools-lab.com/en/retirement">Monthly budget calculator <span>›</span></a>
               </div>
             </div>
 

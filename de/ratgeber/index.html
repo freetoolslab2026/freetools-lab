@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ratgeber und Artikel auf Deutsch</title>
-  <meta name="description" content="Praktische Ratgeber nach Thema und Rechner sortiert: Arbeit, Abfindung, Steuern, Energie und persönliche Finanzen.">
+  <meta name="description" content="Praktische Ratgeber nach Rechner sortiert: Arbeit, Steuern, Energie, Mobilität und persönliche Finanzen.">
   <link rel="canonical" href="https://freetools-lab.com/de/ratgeber/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     .hero { background:var(--navy); padding:46px 36px 42px; text-align:center; border-bottom:1.5px solid rgba(255,255,255,.07); }
     .hero-badge { display:inline-block; background:rgba(224,90,0,.28); color:#FFB680; font-family:'Barlow Condensed', sans-serif; font-weight:700; font-size:13px; letter-spacing:.12em; text-transform:uppercase; padding:4px 14px; border-radius:20px; margin-bottom:18px; }
     .hero h1 { font-family:'Barlow Condensed', sans-serif; font-weight:900; font-size:clamp(34px, 5vw, 56px); text-transform:uppercase; color:var(--white); line-height:1.05; letter-spacing:.02em; margin-bottom:14px; }
-    .hero p { font-size:17px; color:rgba(255,255,255,.65); max-width:660px; margin:0 auto; line-height:1.55; }
+    .hero p { font-size:17px; color:rgba(255,255,255,.65); max-width:760px; margin:0 auto; line-height:1.55; }
     .content { background:var(--white); border:1.5px solid var(--border); border-top:none; border-radius:0 0 10px 10px; padding:38px 36px 46px; }
     .section-title { font-family:'Barlow Condensed', sans-serif; font-weight:900; font-size:24px; text-transform:uppercase; color:var(--navy); letter-spacing:.05em; margin:34px 0 16px; display:flex; align-items:center; gap:10px; }
     .section-title:first-child { margin-top:0; }
@@ -34,81 +34,40 @@
     .article-list { list-style:none; display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:10px; }
     .article-list a { display:block; border:1.5px solid var(--border); border-radius:8px; padding:13px 14px; background:#fff; color:#333; text-decoration:none; line-height:1.45; transition:border-color .15s, transform .15s; }
     .article-list a:hover { border-color:var(--accent); transform:translateY(-2px); }
-    .empty { border:1.5px solid var(--border); border-radius:10px; background:var(--sidebar); padding:22px; color:#555; line-height:1.6; }
     footer { background:var(--navy); border-radius:0 0 10px 10px; padding:20px 28px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; border-top:1.5px solid rgba(255,255,255,.07); }
     footer .foot-links { display:flex; flex-wrap:wrap; gap:18px; }
     footer a { font-size:13px; color:rgba(255,255,255,.5); text-decoration:none; }
     footer a:hover { color:#FFB680; }
     footer .copy { font-size:13px; color:rgba(255,255,255,.3); }
     @media (max-width:860px) { nav { border-radius:8px 8px 0 0; padding:12px 16px; } .hero { padding:34px 20px 30px; } .content { padding:28px 16px 36px; } footer { flex-direction:column; align-items:flex-start; } }
-
-    .cookie-banner{position:fixed;left:18px;right:18px;bottom:18px;z-index:9999;background:#fff;border:1.5px solid var(--border);border-left:5px solid var(--accent);border-radius:10px;box-shadow:0 12px 36px rgba(30,58,95,.18);padding:16px;max-width:760px;margin:0 auto;color:#333}
-    .cookie-actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
-    .cookie-actions button{border:0;border-radius:8px;padding:10px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;cursor:pointer}
-    .cookie-accept{background:var(--accent);color:#fff}
-    .cookie-reject{background:#EBF0F5;color:var(--navy)}
-
   </style>
 </head>
 <body>
 <div class="wrap">
   <nav>
-    <a href="https://freetools-lab.com/" class="logo">Free<span>Tools</span> Lab</a>
+    <a href="https://freetools-lab.com/de/" class="logo">Free<span>Tools</span> Lab</a>
     <span class="tagline">Berechnen · Entscheiden · Kostenlos</span>
   </nav>
   <div class="hero">
     <div class="hero-badge">Ratgeber · Deutsch</div>
     <h1>Ratgeber und Artikel auf Deutsch</h1>
-    <p>Praktische Ratgeber nach Thema und Rechner sortiert: Arbeit, Abfindung, Steuern, Energie und persönliche Finanzen.</p>
+    <p>Praktische Ratgeber nach Rechner sortiert: Arbeit, Steuern, Energie, Mobilität und persönliche Finanzen. 18 Ratgeber veröffentlicht.</p>
   </div>
   <main class="content">
-      <section class="theme">
-        <h2 class="section-title">Arbeit und Kündigung</h2>
-        <div class="tool-block">
-          <h3>Abfindungsrechner</h3>
-          <a class="tool-link" href="https://freetools-lab.com/de/abfindungsrechner">Rechner öffnen</a>
-          <ul class="article-list">
-            <li><a href="https://freetools-lab.com/de/ratgeber/abfindung/abfindung-berechnen-2026">Abfindung berechnen 2026: Formel, Beispiele und wichtige Regeln</a></li>
-            <li><a href="https://freetools-lab.com/de/ratgeber/abfindung/wie-hoch-ist-eine-abfindung-nach-kuendigung">Wie hoch ist eine Abfindung nach Kündigung?</a></li>
-          </ul>
-        </div>
-      </section>
+    <section class="theme"><h2 class="section-title">Abfindungsrechner</h2><div class="tool-block"><h3>Abfindungsrechner</h3><a class="tool-link" href="https://freetools-lab.com/de/abfindungsrechner">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/abfindung/abfindung-berechnen-2026">Abfindung berechnen 2026: Formel, Beispiele und wichtige Regeln</a></li><li><a href="https://freetools-lab.com/de/ratgeber/abfindung/wie-hoch-ist-eine-abfindung-nach-kuendigung">Wie hoch ist eine Abfindung nach Kündigung?</a></li></ul></div></section>
+    <section class="theme"><h2 class="section-title">Brutto-Netto-Rechner</h2><div class="tool-block"><h3>Brutto-Netto-Rechner</h3><a class="tool-link" href="https://freetools-lab.com/de/brutto-netto">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/brutto-netto/brutto-netto-rechner-2026-so-berechnen-sie-ihr-nettogehalt">Brutto-Netto-Rechner 2026: So berechnen Sie Ihr Nettogehalt</a></li><li><a href="https://freetools-lab.com/de/ratgeber/brutto-netto/welche-abzuege-gehen-vom-bruttogehalt-ab-lohnsteuer-sozialversicherung-und-kirch">Welche Abzüge gehen vom Bruttogehalt ab? Lohnsteuer, Sozialversicherung und Kirchensteuer erklärt</a></li></ul></div></section>
+    <section class="theme"><h2 class="section-title">Elterngeld-Rechner</h2><div class="tool-block"><h3>Elterngeld-Rechner</h3><a class="tool-link" href="https://freetools-lab.com/de/elterngeld">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/elterngeld/elterngeld-berechnen-2026-basiselterngeld-elterngeldplus-und-partnermonate">Elterngeld berechnen 2026: Basiselterngeld, ElterngeldPlus und Partnermonate</a></li><li><a href="https://freetools-lab.com/de/ratgeber/elterngeld/wie-viel-elterngeld-bekomme-ich-einkommen-mindestbetrag-und-hoechstbetrag-erklae">Wie viel Elterngeld bekomme ich? Einkommen, Mindestbetrag und Höchstbetrag erklärt</a></li></ul></div></section>
+    <section class="theme"><h2 class="section-title">E-Auto Kostenrechner</h2><div class="tool-block"><h3>E-Auto Kostenrechner</h3><a class="tool-link" href="https://freetools-lab.com/de/ev-kostenrechner">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/ev-kostenrechner/e-auto-kosten-berechnen-2026-strom-versicherung-wartung-und-wertverlust">E-Auto Kosten berechnen 2026: Strom, Versicherung, Wartung und Wertverlust</a></li><li><a href="https://freetools-lab.com/de/ratgeber/ev-kostenrechner/e-auto-oder-verbrenner-was-ist-2026-guenstiger">E-Auto oder Verbrenner: Was ist 2026 günstiger?</a></li></ul></div></section>
+    <section class="theme"><h2 class="section-title">Nebenkostenrechner</h2><div class="tool-block"><h3>Nebenkostenrechner</h3><a class="tool-link" href="https://freetools-lab.com/de/nebenkosten">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/nebenkosten/nebenkosten-berechnen-2026-was-mieter-wirklich-zahlen">Nebenkosten berechnen 2026: Was Mieter wirklich zahlen</a></li><li><a href="https://freetools-lab.com/de/ratgeber/nebenkosten/welche-nebenkosten-sind-umlagefaehig-betriebskosten-einfach-erklaert">Welche Nebenkosten sind umlagefähig? Betriebskosten einfach erklärt</a></li></ul></div></section>
+    <section class="theme"><h2 class="section-title">Photovoltaik-Rechner</h2><div class="tool-block"><h3>Photovoltaik-Rechner</h3><a class="tool-link" href="https://freetools-lab.com/de/photovoltaik">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/photovoltaik/lohnt-sich-eine-pv-anlage-mit-speicher-2026">Lohnt sich eine PV-Anlage mit Speicher 2026?</a></li><li><a href="https://freetools-lab.com/de/ratgeber/photovoltaik/photovoltaik-berechnen-2026-kosten-ertrag-eigenverbrauch-und-amortisation">Photovoltaik berechnen 2026: Kosten, Ertrag, Eigenverbrauch und Amortisation</a></li></ul></div></section>
+    <section class="theme"><h2 class="section-title">Einkommensteuerrechner</h2><div class="tool-block"><h3>Einkommensteuerrechner</h3><a class="tool-link" href="https://freetools-lab.com/de/steuerrechner">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/steuerrechner/einkommensteuer-berechnen-2026-grundtabelle-splitting-und-solidaritaetszuschlag">Einkommensteuer berechnen 2026: Grundtabelle, Splitting und Solidaritätszuschlag</a></li><li><a href="https://freetools-lab.com/de/ratgeber/steuerrechner/zu-versteuerndes-einkommen-warum-es-nicht-dem-bruttogehalt-entspricht">Zu versteuerndes Einkommen: Warum es nicht dem Bruttogehalt entspricht</a></li></ul></div></section>
+    <section class="theme"><h2 class="section-title">Schweizer Steuerrechner</h2><div class="tool-block"><h3>Schweizer Steuerrechner</h3><a class="tool-link" href="https://freetools-lab.com/de/steuerrechner-ch">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/steuerrechner-ch/schweizer-steuern-berechnen-2026-bund-kanton-und-gemeinde-einfach-erklaert">Schweizer Steuern berechnen 2026: Bund, Kanton und Gemeinde einfach erklärt</a></li><li><a href="https://freetools-lab.com/de/ratgeber/steuerrechner-ch/warum-die-einkommensteuer-in-der-schweiz-vom-wohnort-abhaengt">Warum die Einkommensteuer in der Schweiz vom Wohnort abhängt</a></li></ul></div></section>
+    <section class="theme"><h2 class="section-title">Wärmepumpen-Rechner</h2><div class="tool-block"><h3>Wärmepumpen-Rechner</h3><a class="tool-link" href="https://freetools-lab.com/de/waermepumpe">Rechner öffnen</a><ul class="article-list"><li><a href="https://freetools-lab.com/de/ratgeber/waermepumpe/lohnt-sich-eine-waermepumpe-in-deutschland-2026">Lohnt sich eine Wärmepumpe in Deutschland 2026?</a></li><li><a href="https://freetools-lab.com/de/ratgeber/waermepumpe/waermepumpe-kosten-berechnen-2026-investition-stromverbrauch-und-foerderung">Wärmepumpe Kosten berechnen 2026: Investition, Stromverbrauch und Förderung</a></li></ul></div></section>
   </main>
   <footer>
-    <div class="foot-links">
-      <a href="https://freetools-lab.com/de/datenschutz">Datenschutz</a>
-      <a href="https://freetools-lab.com/de/nutzungsbedingungen">Nutzungsbedingungen</a>
-      <a href="https://freetools-lab.com/de/ueber-uns">Über uns</a>
-    </div>
+    <div class="foot-links"><a href="https://freetools-lab.com/de/datenschutz">Datenschutz</a><a href="https://freetools-lab.com/de/nutzungsbedingungen">Nutzungsbedingungen</a><a href="https://freetools-lab.com/de/ueber-uns">Über uns</a></div>
     <span class="copy">© 2026 FreeTools Lab</span>
   </footer>
 </div>
-<div id="ftl-cookie-banner" class="cookie-banner"><p><strong>Cookies:</strong> Wir verwenden Analyse-Cookies nur, wenn Sie zustimmen. Notwendige Cookies speichern diese Auswahl.</p><div class="cookie-actions"><button type="button" class="cookie-accept" id="ftl-accept-btn">Akzeptieren</button><button type="button" class="cookie-reject" id="ftl-reject-btn">Nur notwendige</button></div></div>
-
-<script>
-(function(){
-window.FTL_GA4_ID='G-PFNMBYBY8B';
-window.FTL_CLARITY_ID='wfrpg1mgir';
-function get(){try{return localStorage.getItem('ftl_cookie_consent');}catch(e){return null;}}
-function set(v){try{localStorage.setItem('ftl_cookie_consent',v);}catch(e){}}
-function hide(){var b=document.getElementById('ftl-cookie-banner');if(b){b.style.display='none';}}
-function deny(){window['ga-disable-'+window.FTL_GA4_ID]=true;}
-function allow(){
- window['ga-disable-'+window.FTL_GA4_ID]=false;
- window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=window.gtag||gtag;
- if(!document.querySelector('script[data-ftl-ga4]')){var g=document.createElement('script');g.async=true;g.dataset.ftlGa4='1';g.src='https://www.googletagmanager.com/gtag/js?id='+window.FTL_GA4_ID;document.head.appendChild(g);g.onload=function(){gtag('js',new Date());gtag('config',window.FTL_GA4_ID);};}
- if(window.FTL_CLARITY_ID&&!window.clarity){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script',window.FTL_CLARITY_ID);}
-}
-var c=get();
-if(c=='accepted'){allow();hide();return;}
-if(c=='rejected'){deny();hide();return;}
-deny();
-var accept=document.getElementById('ftl-accept-btn');
-var reject=document.getElementById('ftl-reject-btn');
-if(accept){accept.addEventListener('click',function(){set('accepted');allow();hide();});}
-if(reject){reject.addEventListener('click',function(){set('rejected');deny();hide();});}
-})();
-</script>
-
 </body>
 </html>

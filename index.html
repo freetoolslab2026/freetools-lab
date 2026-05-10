@@ -1,217 +1,689 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FreeTools Lab │ Free calculators for finance, tax and energy</title>
-<meta name="description" content="FreeTools Lab offers free calculators for Spain, English-speaking markets, Germany and France: finance, tax, insurance, energy, salary and housing tools.">
-<link rel="canonical" href="https://freetools-lab.com/">
-<link rel="alternate" hreflang="x-default" href="https://freetools-lab.com/">
-<link rel="alternate" hreflang="es" href="https://freetools-lab.com/es/">
-<link rel="alternate" hreflang="en" href="https://freetools-lab.com/en/">
-<link rel="alternate" hreflang="de" href="https://freetools-lab.com/de/">
-<link rel="alternate" hreflang="fr" href="https://freetools-lab.com/fr/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied'});
-window.FTL_GA4_ID='G-PFNMBYBY8B';
-window.FTL_CLARITY_ID='wfrpg1mgir';
-</script>
-<!-- AdSense desactivado hasta aprobar slots reales:
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7702007610180764" crossorigin="anonymous"></script>
--->
-<style>
-:root{--accent:#00C4AA;--navy:#1E3A5F;--outer:#E8EDF2;--line:#C2CDD9;--soft:#F4F7FA;--soft2:#EBF0F5;--text:#25364A;--muted:#64748B;--ok:#00C875}
-*{box-sizing:border-box}body{margin:0;background:var(--outer);color:var(--text);font-family:'Enriqueta',serif;font-size:16px;line-height:1.5}a{text-decoration:none;color:inherit}.page{max-width:1300px;margin:0 auto;padding:28px 3%}.shell{background:#fff;border:1.5px solid var(--line);border-radius:10px;overflow:hidden}.topnav{background:var(--navy);border-radius:10px 10px 0 0;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:31px;letter-spacing:.7px;color:#fff;line-height:1}.navlinks{display:flex;gap:18px;flex-wrap:wrap;color:rgba(255,255,255,.68);font-size:14px}.navlinks a:hover{color:#fff}.legal-band{background:#FFF8F0;border:1.5px solid #F4C07A;border-top:none;padding:9px 24px;display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#49331f}.legal-icon{width:18px;height:18px;min-width:18px;border-radius:50%;background:#E05A00;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:900;display:flex;align-items:center;justify-content:center;margin-top:2px}.hero{background:var(--navy);padding:42px 24px 36px;color:#fff}.badge{display:inline-block;background:rgba(0,196,170,.25);color:#B8FFF5;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.6px;font-size:14px;padding:5px 11px;border-radius:999px;margin-bottom:14px;border:1px solid rgba(255,255,255,.14)}h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:50px;line-height:.95;margin:0 0 12px;color:#fff;max-width:920px}.hero p{font-size:17px;color:rgba(255,255,255,.65);max-width:860px;margin:0 0 18px}.tagline{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;font-size:13px;color:rgba(255,255,255,.32);margin-bottom:20px}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:980px}.metric{border:1.5px solid rgba(255,255,255,.14);border-radius:8px;padding:10px 12px;background:rgba(255,255,255,.04)}.metric strong{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:18px;display:block;color:#fff}.metric span{font-size:12px;color:rgba(255,255,255,.55)}.main{padding:28px 24px 34px}.section-title{display:flex;align-items:center;gap:9px;margin:0 0 16px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:30px;color:var(--navy)}.section-title:before{content:"";width:5px;height:28px;background:var(--accent);border-radius:2px}.tool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:28px}.tool-card{border:1.5px solid var(--line);border-radius:10px;background:#fff;padding:17px;display:flex;flex-direction:column;min-height:210px}.tool-card:hover{border-color:var(--accent);box-shadow:0 10px 24px rgba(30,58,95,.10)}.tool-tag{font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:var(--accent);margin-bottom:8px}.tool-card h2{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:25px;line-height:1.02;color:var(--navy);margin:0 0 8px}.tool-card p{font-size:14px;color:#40536A;margin:0 0 14px}.tool-card a{margin-top:auto;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:17px;color:var(--accent)}.language-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:28px}.language-card{border:1.5px solid var(--line);border-radius:10px;background:var(--soft);padding:18px}.language-card strong{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;font-size:25px;color:var(--navy);display:block}.language-card span{color:var(--muted);font-size:13px}.note{background:rgba(30,58,95,.05);border:1.5px solid rgba(30,58,95,.12);border-radius:10px;padding:16px 18px;margin:8px 0 24px;color:#40536A}.ad-leader,.ad-rect,.ad-side{display:none!important}footer{background:var(--navy);border-radius:0 0 10px 10px;color:rgba(255,255,255,.68);padding:22px 24px;text-align:center;font-size:13px}footer a{margin:0 8px;color:rgba(255,255,255,.82)}.cookie-banner{position:fixed;left:18px;right:18px;bottom:18px;z-index:9999;background:#fff;border:1.5px solid var(--line);border-left:5px solid var(--accent);border-radius:10px;box-shadow:0 12px 36px rgba(30,58,95,.18);padding:16px;max-width:760px;margin:0 auto;color:var(--text)}.cookie-banner p{margin:0 0 12px;font-size:13px}.cookie-actions{display:flex;gap:10px;flex-wrap:wrap}.cookie-actions button{border:0;border-radius:8px;padding:10px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;cursor:pointer}.cookie-accept{background:var(--accent);color:#fff}.cookie-reject{background:var(--soft2);color:var(--navy)}@media(max-width:980px){.tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.language-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:860px){.page{padding:16px 3%}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}h1{font-size:40px}.topnav{align-items:flex-start}}@media(max-width:560px){.tool-grid,.language-grid,.metrics{grid-template-columns:1fr}h1{font-size:35px}.hero,.main,.topnav,footer{padding-left:18px;padding-right:18px}.legal-band{padding-left:18px;padding-right:18px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeTools Lab · Herramientas financieras gratuitas</title>
+  <meta name="description" content="Calculadoras financieras, fiscales, laborales y de energía en español, inglés, alemán y francés. Herramientas gratuitas, sin registro y con resultados claros.">
+  <link rel="canonical" href="https://freetools-lab.com/">
+  <link rel="alternate" hreflang="x-default" href="https://freetools-lab.com/">
+  <link rel="alternate" hreflang="es" href="https://freetools-lab.com/">
+  <link rel="alternate" hreflang="en" href="https://freetools-lab.com/">
+  <link rel="alternate" hreflang="de" href="https://freetools-lab.com/">
+  <link rel="alternate" hreflang="fr" href="https://freetools-lab.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- GA4 -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFNMBYBY8B"></script> -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #1E3A5F;
+      --accent: #E05A00;
+      --bg:     #E8EDF2;
+      --border: #C2CDD9;
+      --sidebar:#F4F7FA;
+      --white:  #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      font-family: 'Enriqueta', Georgia, serif;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 28px 3%;
+    }
+
+    nav {
+      background: var(--navy);
+      border-radius: 10px 10px 0 0;
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+    nav .tagline {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.45);
+    }
+
+    .hero {
+      background: var(--navy);
+      padding: 52px 36px 48px;
+      text-align: center;
+      border-bottom: 1.5px solid rgba(255,255,255,.07);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(224,90,0,.28);
+      color: #FFB680;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(36px, 6vw, 60px);
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1.05;
+      letter-spacing: .02em;
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: #FFB680; }
+    .hero p {
+      font-family: 'Enriqueta', serif;
+      font-size: 18px;
+      color: rgba(255,255,255,.65);
+      max-width: 620px;
+      margin: 0 auto 10px;
+      line-height: 1.55;
+    }
+    .hero-tagline {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: .2em;
+      color: rgba(255,255,255,.28);
+      text-transform: uppercase;
+      margin-top: 16px;
+    }
+
+    .portals {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+      padding: 40px 36px 48px;
+    }
+    .portals-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      text-transform: uppercase;
+      color: var(--navy);
+      letter-spacing: .06em;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .portals-title::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 22px;
+      background: var(--accent);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .language-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .language-controls button {
+      border: 1.5px solid var(--border);
+      background: var(--sidebar);
+      color: var(--navy);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .language-controls button.active {
+      background: var(--accent);
+      color: var(--white);
+      border-color: var(--accent);
+    }
+    .portals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .portal-card {
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+    }
+    .portal-card.recommended {
+      border-color: var(--accent);
+      box-shadow: 0 12px 32px rgba(30,58,95,.10);
+    }
+    .portal-card-header {
+      padding: 22px 22px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: linear-gradient(180deg, rgba(30,58,95,.04), rgba(255,255,255,0));
+    }
+    .portal-flag {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 1.5px rgba(30,58,95,.12);
+      background:#fff;
+    }
+    .flag-icon{width:30px;height:20px;border-radius:2px;box-shadow:0 0 0 1px rgba(30,58,95,.18);display:block;overflow:hidden;position:relative;background:#fff}
+    .flag-icon.es{background:linear-gradient(to bottom,#AA151B 0 25%,#F1BF00 25% 75%,#AA151B 75% 100%)}
+    .flag-icon.de{background:linear-gradient(to bottom,#000 0 33.33%,#DD0000 33.33% 66.66%,#FFCE00 66.66% 100%)}
+    .flag-icon.fr{background:linear-gradient(to right,#0055A4 0 33.33%,#fff 33.33% 66.66%,#EF4135 66.66% 100%)}
+    .flag-icon.en{background:repeating-linear-gradient(to bottom,#B22234 0 1.54px,#fff 1.54px 3.08px)}
+    .flag-icon.en:before{content:"";position:absolute;left:0;top:0;width:12.5px;height:10.8px;background:#3C3B6E}
+    .flag-icon.en:after{content:"★";position:absolute;left:2px;top:0px;color:#fff;font-size:6px;letter-spacing:1px;line-height:6px;text-shadow:5px 0 #fff,0 4px #fff,5px 4px #fff}
+    .portal-flag.es { background: rgba(255,99,0,.12); }
+    .portal-flag.en { background: rgba(0,120,215,.12); }
+    .portal-flag.de { background: rgba(30,58,95,.12); }
+    .portal-flag.fr { background: rgba(0,85,164,.12); }
+
+    .portal-info { flex: 1; }
+    .portal-lang {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .portal-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      line-height: 1.1;
+    }
+    .portal-market {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: #888;
+      margin-top: 3px;
+    }
+    .portal-tools {
+      padding: 0 22px 22px;
+      flex: 1;
+    }
+    .portal-tools ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .portal-tools li {
+      font-family: 'Enriqueta', serif;
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 24px;
+    }
+    .portal-tools li::before {
+      content: '›';
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .portal-tools a {
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(224,90,0,.35);
+      transition: color .15s, border-color .15s;
+    }
+    .portal-tools a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .soon {
+      color: #8a96a3;
+    }
+    .soon-badge {
+      margin-left: auto;
+      flex-shrink: 0;
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #6b7682;
+      background: var(--sidebar);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 2px 7px;
+    }
+    .published-badge {
+      margin-left: auto;
+      flex-shrink: 0;
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #16784d;
+      background: rgba(0,200,117,.10);
+      border: 1px solid rgba(0,200,117,.28);
+      border-radius: 999px;
+      padding: 2px 7px;
+    }
+
+    .guides-section {
+      margin-top: 34px;
+      padding-top: 28px;
+      border-top: 1.5px solid var(--border);
+    }
+    .guides-section h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 26px;
+      text-transform: uppercase;
+      color: var(--navy);
+      letter-spacing: .04em;
+      margin-bottom: 8px;
+    }
+    .guides-section p {
+      font-family: 'Enriqueta', serif;
+      font-size: 15px;
+      color: #666;
+      line-height: 1.55;
+      max-width: 760px;
+      margin-bottom: 18px;
+    }
+    .guides-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+    }
+    .guides-links a {
+      display: block;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      background: var(--sidebar);
+      padding: 14px 16px;
+      color: var(--navy);
+      text-decoration: none;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      transition: border-color .15s, transform .15s;
+    }
+    .guides-links a:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1.5px solid var(--border);
+      justify-content: center;
+    }
+    .stat {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--sidebar);
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px;
+    }
+    .stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 22px;
+      color: var(--navy);
+    }
+    .stat-label {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: #666;
+      line-height: 1.3;
+    }
+
+    footer {
+      background: var(--navy);
+      border-radius: 0 0 10px 10px;
+      padding: 20px 28px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 0;
+      border-top: 1.5px solid rgba(255,255,255,.07);
+    }
+    footer .foot-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    footer a {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.5);
+      text-decoration: none;
+      transition: color .15s;
+    }
+    footer a:hover { color: #FFB680; }
+    footer .copy {
+      font-family: 'Enriqueta', serif;
+      font-size: 13px;
+      color: rgba(255,255,255,.3);
+    }
+
+    @media (max-width: 860px) {
+      nav { border-radius: 8px 8px 0 0; padding: 12px 16px; }
+      .hero { padding: 36px 20px 32px; }
+      .portals { padding: 28px 16px 36px; }
+      .portals-grid { grid-template-columns: 1fr; }
+      .stats { gap: 8px; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+    .cookie-banner{position:fixed;left:18px;right:18px;bottom:18px;z-index:9999;background:#fff;border:1.5px solid var(--border);border-left:5px solid var(--accent);border-radius:10px;box-shadow:0 12px 36px rgba(30,58,95,.18);padding:16px;max-width:760px;margin:0 auto;color:#333}
+    .cookie-actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+    .cookie-actions button{border:0;border-radius:8px;padding:10px 14px;font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;cursor:pointer}
+    .cookie-accept{background:var(--accent);color:#fff}
+    .cookie-reject{background:#EBF0F5;color:var(--navy)}
+
+  </style>
 </head>
-<body><div class="page"><div class="shell"><nav class="topnav"><a href="https://freetools-lab.com/" class="logo">FreeTools Lab</a><div class="navlinks"><a href="https://freetools-lab.com/es/">ES</a><a href="https://freetools-lab.com/en/">EN</a><a href="https://freetools-lab.com/de/">DE</a><a href="https://freetools-lab.com/fr/">FR</a></div></nav><div class="legal-band"><div class="legal-icon">!</div><div><strong>Legal notice:</strong> FreeTools Lab tools are informational calculators. Results are estimates<br>and do not constitute legal, tax, insurance or financial advice. Always verify with official sources.</div></div>
-<header class="hero"><span class="badge">FreeTools Lab</span><h1>Free calculators for real decisions</h1><p>Explore practical calculators by country and topic: salary, tax, insurance, mortgage, loans, energy, solar, EV costs, housing and work-related tools.</p><div class="tagline">Calculate · Decide · Free</div><div class="metrics"><div class="metric"><strong>33 tools</strong><span>Published calculators</span></div><div class="metric"><strong>4 languages</strong><span>ES · EN · DE · FR</span></div><div class="metric"><strong>No signup</strong><span>Fast browser tools</span></div><div class="metric"><strong>2026</strong><span>Updated assumptions</span></div></div></header>
-<main class="main"><section><h2 class="section-title">Choose your market</h2><div class="language-grid"><a class="language-card" href="https://freetools-lab.com/es/"><strong>ES · España</strong><span>Nómina, finiquito, vivienda y energía.</span></a><a class="language-card" href="https://freetools-lab.com/en/"><strong>EN · English</strong><span>Mortgage, insurance, loans, salary and retirement.</span></a><a class="language-card" href="https://freetools-lab.com/de/"><strong>DE · Deutschland</strong><span>Arbeit, Steuern, Wohnen und Energie.</span></a><a class="language-card" href="https://freetools-lab.com/fr/"><strong>FR · France</strong><span>Salaire net/brut et impôt sur le revenu.</span></a></div></section><section><h2 class="section-title">España</h2><div class="tool-grid"><article class="tool-card">
-<div class="tool-tag">Fiscal · España</div>
-<h2>Simulador Nómina e IRPF España 2026</h2>
-<p>Calcula tu sueldo neto en España en 2026 con Seguridad Social, MEI, IRPF estimado, pagas extra y desglose por nómina. Gratis y sin registro.</p>
-<a href="https://freetools-lab.com/es/nomina-irpf">Abrir herramienta <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Laboral · España</div>
-<h2>Calculadora de Finiquito 2026</h2>
-<p>Calcula tu finiquito en España en 2026: salario pendiente, vacaciones no disfrutadas, pagas extra e indemnización por despido. Gratis y sin…</p>
-<a href="https://freetools-lab.com/es/finiquito">Abrir herramienta <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Inmobiliario · España</div>
-<h2>Calculadora Gastos Compra Piso 2026</h2>
-<p>Calcula los gastos de comprar vivienda en España en 2026: ITP por CCAA, IVA, AJD, notaría, registro, gestoría, tasación e hipoteca. Gratis y sin…</p>
-<a href="https://freetools-lab.com/es/gastos-piso">Abrir herramienta <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Energía · España</div>
-<h2>Calculadora Consumo Eléctrico 2026</h2>
-<p>Calcula el consumo eléctrico de tus electrodomésticos, coste mensual/anual y compara con aparatos nuevos para estimar ahorro y plazo de…</p>
-<a href="https://freetools-lab.com/es/consumo-electrico">Abrir herramienta <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Energía · España</div>
-<h2>Calculadora ahorro bomba de calor</h2>
-<p>Calcula si merece la pena instalar una bomba de calor en España: ahorro anual, amortización, coste neto, subvención editable y reducción…</p>
-<a href="https://freetools-lab.com/es/bomba-calor">Abrir herramienta <span>›</span></a>
-</article></div></section><section><h2 class="section-title">English</h2><div class="tool-grid"><article class="tool-card">
-<div class="tool-tag">Real Estate · USA</div>
-<h2>Mortgage Calculator 2026</h2>
-<p>Calculate a 2026 US mortgage payment with principal, interest, PMI, property tax, homeowners insurance, HOA and amortization. Free, no sign-up.</p>
-<a href="https://freetools-lab.com/en/mortgage">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Insurance · USA</div>
-<h2>Health Insurance Cost Estimator 2026</h2>
-<p>Estimate monthly health insurance costs by state, income, family size and ACA metal tier. Includes subsidy estimate, deductibles and…</p>
-<a href="https://freetools-lab.com/en/health-insurance">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Insurance · USA</div>
-<h2>Dental Insurance Calculator 2026</h2>
-<p>Compare 2026 dental insurance premiums, deductibles, annual maximums and procedure costs against paying cash. Free dental insurance calculator,…</p>
-<a href="https://freetools-lab.com/en/dental-insurance">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Personal Finance · USA</div>
-<h2>Personal Loan Calculator 2026</h2>
-<p>Calculate a 2026 personal loan payment with APR, origination fee, total interest, payoff date, extra payments and amortization. Free, no sign-up.</p>
-<a href="https://freetools-lab.com/en/personal-loan">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Personal Finance · USA</div>
-<h2>Retirement Calculator 2026</h2>
-<p>Calculate whether you are on track for retirement in 2026 with savings growth, 401(k)/IRA limits, Social Security estimate, inflation,…</p>
-<a href="https://freetools-lab.com/en/retirement">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Personal Finance · USA</div>
-<h2>Salary Calculator by State 2026</h2>
-<p>Calculate 2026 US take-home pay by state with federal income tax, FICA, standard deductions, state tax estimate, pay periods and pre-tax…</p>
-<a href="https://freetools-lab.com/en/salary-calculator">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Student loans · USA</div>
-<h2>Student Loan Calculator 2026</h2>
-<p>Calculate federal student loan payments for 2026: Standard, Extended, IBR and RAP estimates, total interest, payoff date and income-based…</p>
-<a href="https://freetools-lab.com/en/student-loan">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Real Estate · USA</div>
-<h2>Rent vs Buy Calculator 2026</h2>
-<p>Compare renting vs buying a home in 2026 with mortgage payment, down payment, closing costs, taxes, insurance, HOA, appreciation, rent growth…</p>
-<a href="https://freetools-lab.com/en/rent-vs-buy">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Personal finance · USA</div>
-<h2>Credit Card Rewards Calculator 2026</h2>
-<p>Estimate annual credit card rewards after fees, category caps, welcome bonus, point value, foreign fees and carried balance interest. Free 2026…</p>
-<a href="https://freetools-lab.com/en/credit-card-rewards">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Insurance · USA</div>
-<h2>Pet Insurance Calculator 2026</h2>
-<p>Estimate whether pet insurance is worth it for your dog or cat in 2026. Compare premiums, deductible, reimbursement, expected vet bills and…</p>
-<a href="https://freetools-lab.com/en/pet-insurance">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Solar · USA</div>
-<h2>Solar Panel ROI Calculator 2026</h2>
-<p>Calculate solar panel ROI in 2026 with system size, production, net metering, battery storage, tax credit status, payback period and 25-year…</p>
-<a href="https://freetools-lab.com/en/solar-roi">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">SaaS · Global</div>
-<h2>AI Tools Comparison 2026</h2>
-<p>Compare AI tools in 2026 by use case, budget, privacy needs, coding, research, writing, image generation, office integration and team features.</p>
-<a href="https://freetools-lab.com/en/ai-tools">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">SaaS · Business</div>
-<h2>SaaS ROI Calculator 2026</h2>
-<p>Calculate SaaS ROI before buying software: subscription cost, implementation, adoption, time savings, revenue lift, cost reduction, payback…</p>
-<a href="https://freetools-lab.com/en/saas-roi">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Real Estate · UK</div>
-<h2>UK mortgage calculator</h2>
-<p>Calculate UK mortgage repayments, LTV, total interest, product fees and Stamp Duty Land Tax for England and Northern Ireland. Free 2026…</p>
-<a href="https://freetools-lab.com/en/mortgage-uk">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Energy / EV · United Kingdom</div>
-<h2>EV vs Petrol Cost Calculator UK 2026</h2>
-<p>Compare the true UK cost of an electric car vs petrol car in 2026: charging, petrol, VED, insurance, maintenance, depreciation, grants and…</p>
-<a href="https://freetools-lab.com/en/ev-cost-uk">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Employment · United Kingdom</div>
-<h2>UK Redundancy Pay Calculator 2026</h2>
-<p>Calculate statutory redundancy pay in the UK for 2026 with age-banded years, weekly pay cap, maximum entitlement, enhanced redundancy and tax…</p>
-<a href="https://freetools-lab.com/en/redundancy-uk">Open calculator <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Tax · United Kingdom</div>
-<h2>UK Self-Employed Tax Calculator 2026/27</h2>
-<p>Calculate UK self-employed tax for 2026/27: income tax, personal allowance taper, Class 4 National Insurance, student loan, pension relief and…</p>
-<a href="https://freetools-lab.com/en/self-employed-uk">Open calculator <span>›</span></a>
-</article></div></section><section><h2 class="section-title">Deutschland</h2><div class="tool-grid"><article class="tool-card">
-<div class="tool-tag">Arbeit · Deutschland</div>
-<h2>Abfindungsrechner 2026</h2>
-<p>Berechnen Sie Ihre mögliche Abfindung 2026 nach §1a KSchG mit Bruttogehalt, Beschäftigungsdauer, Teiljahren, Steuerhinweis und Vergleich…</p>
-<a href="https://freetools-lab.com/de/abfindungsrechner">Rechner öffnen <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Steuern · Deutschland</div>
-<h2>Brutto-Netto-Rechner 2026</h2>
-<p>Berechnen Sie Ihr Nettogehalt 2026 in Deutschland mit Lohnsteuer, Sozialversicherung, Kirchensteuer und Zusatzbeitrag. Kostenlos und ohne…</p>
-<a href="https://freetools-lab.com/de/brutto-netto">Rechner öffnen <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Steuern · Deutschland</div>
-<h2>Einkommensteuerrechner 2026</h2>
-<p>Berechnen Sie die Einkommensteuer 2026 in Deutschland mit Grundtabelle, Splitting, Kirchensteuer und Solidaritätszuschlag. Kostenlos.</p>
-<a href="https://freetools-lab.com/de/steuerrechner">Rechner öffnen <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Steuern · Schweiz</div>
-<h2>Schweizer Steuerrechner 2026</h2>
-<p>Schätzen Sie Ihre Einkommenssteuer in der Schweiz 2026: direkte Bundessteuer, kantonale und kommunale Steuer, Kirchensteuer, Abzüge und…</p>
-<a href="https://freetools-lab.com/de/steuerrechner-ch">Rechner öffnen <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Familie · Deutschland</div>
-<h2>Elterngeld-Rechner 2026</h2>
-<p>Berechnen Sie Ihr Elterngeld 2026 in Deutschland: Basiselterngeld, ElterngeldPlus, Geschwisterbonus, Mehrlingszuschlag und Einkommensgrenze.…</p>
-<a href="https://freetools-lab.com/de/elterngeld">Rechner öffnen <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Wohnen · Deutschland</div>
-<h2>Nebenkostenrechner 2026</h2>
-<p>Berechnen Sie Wohnnebenkosten 2026 in Deutschland: kalte Betriebskosten, Heizkosten, Vorauszahlung, mögliche Nachzahlung und Kosten pro…</p>
-<a href="https://freetools-lab.com/de/nebenkosten">Rechner öffnen <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Solar · Deutschland</div>
-<h2>Photovoltaik-Rechner 2026</h2>
-<p>Berechnen Sie 2026 Photovoltaik-Kosten, Eigenverbrauch, Einspeisevergütung, Speicher, Rendite und Amortisation in Deutschland. Kostenlos und…</p>
-<a href="https://freetools-lab.com/de/photovoltaik">Rechner öffnen <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Energie · Deutschland</div>
-<h2>Wärmepumpen-Rechner 2026</h2>
-<p>Berechnen Sie Investitionskosten, Heizkosten, Förderung, Stromverbrauch und Amortisationszeit einer Wärmepumpe in Deutschland 2026.</p>
-<a href="https://freetools-lab.com/de/waermepumpe">Rechner öffnen <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Mobilität · Deutschland</div>
-<h2>Elektroauto Kostenrechner 2026</h2>
-<p>Vergleichen Sie 2026 die Gesamtkosten von Elektroauto und Verbrenner: Kaufpreis, Förderung, Strom, Kraftstoff, Wartung, Versicherung, Steuer,…</p>
-<a href="https://freetools-lab.com/de/ev-kostenrechner">Rechner öffnen <span>›</span></a>
-</article></div></section><section><h2 class="section-title">France</h2><div class="tool-grid"><article class="tool-card">
-<div class="tool-tag">Emploi · France</div>
-<h2>Simulateur Salaire Net Brut 2026</h2>
-<p>Convertissez un salaire brut en net ou net en brut en France 2026 : cotisations salariales, statut cadre/non-cadre, CSG/CRDS, primes et…</p>
-<a href="https://freetools-lab.com/fr/salaire-net-brut">Ouvrir le calculateur <span>›</span></a>
-</article><article class="tool-card">
-<div class="tool-tag">Impôt · France</div>
-<h2>Simulateur Impôt sur le Revenu 2026</h2>
-<p>Simulez votre impôt sur le revenu 2026 en France : barème progressif 2026 sur les revenus 2025, quotient familial, décote et taux marginal.…</p>
-<a href="https://freetools-lab.com/fr/impot-revenu">Ouvrir le calculateur <span>›</span></a>
-</article></div></section></main><footer><div><a href="https://freetools-lab.com/en/privacy-policy">Privacy</a> | <a href="https://freetools-lab.com/es/privacy-policy">Privacidad</a> | <a href="https://freetools-lab.com/de/datenschutz">Datenschutz</a> | <a href="https://freetools-lab.com/fr/politique-confidentialite">Confidentialité</a></div><div>© 2026 FreeTools Lab · Free calculators and guides</div></footer></div></div><div id="ftl-cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent"><p><strong>Cookies:</strong> We use analytics only if you accept. Essential cookies remember this choice.</p><div class="cookie-actions"><button type="button" class="cookie-accept" id="ftl-accept-btn">Accept</button><button type="button" class="cookie-reject" id="ftl-reject-btn">Essential only</button></div></div>
+<body>
+<div class="wrap">
+
+  <nav>
+    <a href="https://freetools-lab.com/" class="logo">Free<span>Tools</span> Lab</a>
+    <span class="tagline">Calcula · Decide · Gratis</span>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-badge">4 idiomas · Herramientas gratuitas · Sin registro</div>
+    <h1>Herramientas financieras<br><span>para decisiones reales</span></h1>
+    <p>Calculadoras gratuitas para nómina, hipotecas, seguros, préstamos, jubilación, finiquito, vivienda y consumo eléctrico. Elige tu idioma y entra directamente en la herramienta que necesitas.</p>
+    <div class="hero-tagline">Calcula · Decide · Gratis</div>
+  </div>
+
+  <div class="portals">
+
+    <div class="portals-title">Elige idioma y herramienta</div>
+
+    <div class="language-controls" aria-label="Ordenar idiomas">
+      <button type="button" data-lang-button="es">Español</button>
+      <button type="button" data-lang-button="en">English</button>
+      <button type="button" data-lang-button="de">Deutsch</button>
+      <button type="button" data-lang-button="fr">Français</button>
+    </div>
+
+    <div class="portals-grid" id="languageGrid">
+
+      <section class="portal-card" data-lang-card="es">
+        <div class="portal-card-header">
+          <div class="portal-flag es" aria-label="España"><span class="flag-icon es" aria-hidden="true"></span></div>
+          <div class="portal-info">
+            <div class="portal-lang">Español</div>
+            <div class="portal-name">Herramientas ES</div>
+            <div class="portal-market">España</div>
+          </div>
+        </div>
+        <div class="portal-tools">
+          <ul>
+            <li><a href="https://freetools-lab.com/es/nomina-irpf">Simulador Nómina / IRPF España</a><span class="published-badge">Disponible</span></li>
+            <li><a href="https://freetools-lab.com/es/finiquito">Calculadora de Finiquito</a><span class="published-badge">Disponible</span></li>
+            <li><a href="https://freetools-lab.com/es/gastos-piso">Calculadora Gastos Compra Piso</a><span class="published-badge">Disponible</span></li>
+            <li><a href="https://freetools-lab.com/es/consumo-electrico">Calculadora Consumo Eléctrico</a><span class="published-badge">Disponible</span></li>
+            <li><a href="https://freetools-lab.com/es/bomba-calor">Calculadora Bomba de Calor</a><span class="published-badge">Disponible</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portal-card" data-lang-card="en">
+        <div class="portal-card-header">
+          <div class="portal-flag en" aria-label="English"><span class="flag-icon en" aria-hidden="true"></span></div>
+          <div class="portal-info">
+            <div class="portal-lang">English</div>
+            <div class="portal-name">EN Tools</div>
+            <div class="portal-market">USA · UK · AU · CA</div>
+          </div>
+        </div>
+        <div class="portal-tools">
+          <ul>
+            <li><a href="https://freetools-lab.com/en/mortgage">Mortgage Calculator USA</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/mortgage-uk">Mortgage Calculator UK</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/health-insurance">Health Insurance Cost Estimator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/dental-insurance">Dental Insurance Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/personal-loan">Personal Loan Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/retirement">Retirement Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/salary-calculator">Salary Calculator by State</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/student-loan">Student Loan Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/rent-vs-buy">Rent vs Buy Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/ev-cost-uk">EV Cost Calculator UK</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/redundancy-uk">Redundancy Pay Calculator UK</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/self-employed-uk">Self-Employed Tax Calculator UK</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/solar-roi">Solar ROI Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/saas-roi">SaaS ROI Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/ai-tools">AI Tools Cost Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/pet-insurance">Pet Insurance Calculator</a><span class="published-badge">Live</span></li>
+            <li><a href="https://freetools-lab.com/en/credit-card-rewards">Credit Card Rewards Calculator</a><span class="published-badge">Live</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portal-card" data-lang-card="de">
+        <div class="portal-card-header">
+          <div class="portal-flag de" aria-label="Deutschland"><span class="flag-icon de" aria-hidden="true"></span></div>
+          <div class="portal-info">
+            <div class="portal-lang">Deutsch</div>
+            <div class="portal-name">DE Rechner</div>
+            <div class="portal-market">Deutschland · Schweiz</div>
+          </div>
+        </div>
+        <div class="portal-tools">
+          <ul>
+            <li><a href="https://freetools-lab.com/de/abfindungsrechner">Abfindungsrechner</a><span class="published-badge">Online</span></li>
+            <li><a href="https://freetools-lab.com/de/brutto-netto">Brutto-Netto-Rechner</a><span class="published-badge">Online</span></li>
+            <li><a href="https://freetools-lab.com/de/steuerrechner">Steuerrechner Deutschland</a><span class="published-badge">Online</span></li>
+            <li><a href="https://freetools-lab.com/de/steuerrechner-ch">Steuerrechner Schweiz</a><span class="published-badge">Online</span></li>
+            <li><a href="https://freetools-lab.com/de/nebenkosten">Nebenkostenrechner</a><span class="published-badge">Online</span></li>
+            <li><a href="https://freetools-lab.com/de/elterngeld">Elterngeldrechner</a><span class="published-badge">Online</span></li>
+            <li><a href="https://freetools-lab.com/de/waermepumpe">Wärmepumpen-Kostenrechner</a><span class="published-badge">Online</span></li>
+            <li><a href="https://freetools-lab.com/de/photovoltaik">Photovoltaik-Rechner</a><span class="published-badge">Online</span></li>
+            <li><a href="https://freetools-lab.com/de/ev-kostenrechner">E-Auto Kostenrechner</a><span class="published-badge">Online</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portal-card" data-lang-card="fr">
+        <div class="portal-card-header">
+          <div class="portal-flag fr" aria-label="France"><span class="flag-icon fr" aria-hidden="true"></span></div>
+          <div class="portal-info">
+            <div class="portal-lang">Français</div>
+            <div class="portal-name">Outils FR</div>
+            <div class="portal-market">France</div>
+          </div>
+        </div>
+        <div class="portal-tools">
+          <ul>
+            <li><a href="https://freetools-lab.com/fr/impot-revenu">Simulateur Impôt sur le Revenu</a><span class="published-badge">Disponible</span></li>
+            <li><a href="https://freetools-lab.com/fr/salaire-net-brut">Simulateur Salaire Net / Brut</a><span class="published-badge">Disponible</span></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+
+    <section class="guides-section" aria-labelledby="guidesTitle">
+      <h2 id="guidesTitle">Guías prácticas</h2>
+      <p>Artículos organizados por idioma y temática para entender mejor cada cálculo antes de tomar una decisión.</p>
+      <div class="guides-links">
+        <a href="https://freetools-lab.com/es/articulos/">Guías en español</a>
+        <a href="https://freetools-lab.com/en/articles/">Guides in English</a>
+        <a href="https://freetools-lab.com/de/ratgeber/">Ratgeber auf Deutsch</a>
+        <a href="https://freetools-lab.com/fr/articles/">Guides en français</a>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-num">33</span>
+        <span class="stat-label">Herramientas<br>disponibles</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Idiomas<br>preparados</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0 €</span>
+        <span class="stat-label">Sin registro<br>gratis</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">+</span>
+        <span class="stat-label">Más herramientas<br>próximamente</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="foot-links">
+      <a href="https://freetools-lab.com/es/privacy-policy">Privacidad</a>
+      <a href="https://freetools-lab.com/es/terminos">Términos</a>
+      <a href="https://freetools-lab.com/es/sobre-nosotros">Sobre nosotros</a>
+      <a href="https://freetools-lab.com/en/privacy-policy">Privacy Policy</a>
+      <a href="https://freetools-lab.com/de/datenschutz">Datenschutz</a>
+      <a href="https://freetools-lab.com/fr/politique-confidentialite">Confidentialité</a>
+    </div>
+    <span class="copy">© 2026 FreeTools Lab · Herramientas financieras gratuitas</span>
+  </footer>
+
+</div>
 <script>
 (function(){
+  var cards = Array.prototype.slice.call(document.querySelectorAll('[data-lang-card]'));
+  var grid = document.getElementById('languageGrid');
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('[data-lang-button]'));
+  var supported = ['es','en','de','fr'];
+
+  function detectLanguage(){
+    var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'es'];
+    for(var i=0;i<langs.length;i++){
+      var base = String(langs[i]).toLowerCase().slice(0,2);
+      if(supported.indexOf(base) !== -1) return base;
+    }
+    return 'es';
+  }
+
+  function orderFor(lang){
+    var order = [];
+    if(supported.indexOf(lang) === -1) lang = 'es';
+    order.push(lang);
+    if(lang !== 'es') order.push('es');
+    supported.forEach(function(item){
+      if(order.indexOf(item) === -1) order.push(item);
+    });
+    return order;
+  }
+
+  function applyOrder(lang){
+    var order = orderFor(lang);
+    order.forEach(function(code){
+      var card = cards.find(function(item){ return item.getAttribute('data-lang-card') === code; });
+      if(card) grid.appendChild(card);
+    });
+    cards.forEach(function(card){
+      card.classList.toggle('recommended', card.getAttribute('data-lang-card') === lang);
+    });
+    buttons.forEach(function(button){
+      button.classList.toggle('active', button.getAttribute('data-lang-button') === lang);
+    });
+  }
+
+  buttons.forEach(function(button){
+    button.addEventListener('click', function(){
+      applyOrder(button.getAttribute('data-lang-button'));
+    });
+  });
+
+  applyOrder(detectLanguage());
+})();
+</script>
+<div id="ftl-cookie-banner" class="cookie-banner"><p><strong>Cookies:</strong> Usamos analítica solo si aceptas. Las cookies esenciales se usan para recordar esta elección.</p><div class="cookie-actions"><button type="button" class="cookie-accept" id="ftl-accept-btn">Aceptar</button><button type="button" class="cookie-reject" id="ftl-reject-btn">Solo esenciales</button></div></div>
+
+<script>
+(function(){
+window.FTL_GA4_ID='G-PFNMBYBY8B';
+window.FTL_CLARITY_ID='wfrpg1mgir';
 function get(){try{return localStorage.getItem('ftl_cookie_consent');}catch(e){return null;}}
 function set(v){try{localStorage.setItem('ftl_cookie_consent',v);}catch(e){}}
 function hide(){var b=document.getElementById('ftl-cookie-banner');if(b){b.style.display='none';}}
-function deny(){if(window.gtag){gtag('consent','update',{'analytics_storage':'denied','ad_storage':'denied'});}}
+function deny(){window['ga-disable-'+window.FTL_GA4_ID]=true;}
 function allow(){
- if(window.gtag){gtag('consent','update',{'analytics_storage':'granted','ad_storage':'denied'});}
+ window['ga-disable-'+window.FTL_GA4_ID]=false;
+ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=window.gtag||gtag;
  if(!document.querySelector('script[data-ftl-ga4]')){var g=document.createElement('script');g.async=true;g.dataset.ftlGa4='1';g.src='https://www.googletagmanager.com/gtag/js?id='+window.FTL_GA4_ID;document.head.appendChild(g);g.onload=function(){gtag('js',new Date());gtag('config',window.FTL_GA4_ID);};}
  if(window.FTL_CLARITY_ID&&!window.clarity){(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script',window.FTL_CLARITY_ID);}
 }
-var c=get(); if(c=="accepted"){allow();hide();return;} if(c=="rejected"){deny();hide();return;}
-document.getElementById("ftl-accept-btn").addEventListener("click",function(){set("accepted");allow();hide();});
-document.getElementById("ftl-reject-btn").addEventListener("click",function(){set("rejected");deny();hide();});
+var c=get();
+if(c=='accepted'){allow();hide();return;}
+if(c=='rejected'){deny();hide();return;}
+deny();
+var accept=document.getElementById('ftl-accept-btn');
+var reject=document.getElementById('ftl-reject-btn');
+if(accept){accept.addEventListener('click',function(){set('accepted');allow();hide();});}
+if(reject){reject.addEventListener('click',function(){set('rejected');deny();hide();});}
 })();
 </script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "FreeTools Lab", "url": "https://freetools-lab.com/", "hasPart": [{"@type": "WebApplication", "name": "Abfindungsrechner 2026", "url": "https://freetools-lab.com/de/abfindungsrechner"}, {"@type": "WebApplication", "name": "Wärmepumpen-Rechner 2026", "url": "https://freetools-lab.com/de/waermepumpe"}, {"@type": "WebApplication", "name": "Elterngeld-Rechner 2026", "url": "https://freetools-lab.com/de/elterngeld"}, {"@type": "WebApplication", "name": "Elektroauto Kostenrechner 2026", "url": "https://freetools-lab.com/de/ev-kostenrechner"}, {"@type": "WebApplication", "name": "Photovoltaik-Rechner 2026", "url": "https://freetools-lab.com/de/photovoltaik"}, {"@type": "WebApplication", "name": "Brutto-Netto-Rechner 2026", "url": "https://freetools-lab.com/de/brutto-netto"}, {"@type": "WebApplication", "name": "Einkommensteuerrechner 2026", "url": "https://freetools-lab.com/de/steuerrechner"}, {"@type": "WebApplication", "name": "Schweizer Steuerrechner 2026", "url": "https://freetools-lab.com/de/steuerrechner-ch"}, {"@type": "WebApplication", "name": "Nebenkostenrechner 2026", "url": "https://freetools-lab.com/de/nebenkosten"}, {"@type": "WebApplication", "name": "UK Redundancy Pay Calculator 2026", "url": "https://freetools-lab.com/en/redundancy-uk"}, {"@type": "WebApplication", "name": "EV vs Petrol Cost Calculator UK 2026", "url": "https://freetools-lab.com/en/ev-cost-uk"}, {"@type": "WebApplication", "name": "Dental Insurance Calculator 2026", "url": "https://freetools-lab.com/en/dental-insurance"}, {"@type": "WebApplication", "name": "Health Insurance Cost Estimator 2026", "url": "https://freetools-lab.com/en/health-insurance"}, {"@type": "WebApplication", "name": "Pet Insurance Calculator 2026", "url": "https://freetools-lab.com/en/pet-insurance"}, {"@type": "WebApplication", "name": "Personal Loan Calculator 2026", "url": "https://freetools-lab.com/en/personal-loan"}, {"@type": "WebApplication", "name": "Retirement Calculator 2026", "url": "https://freetools-lab.com/en/retirement"}, {"@type": "WebApplication", "name": "Salary Calculator by State 2026", "url": "https://freetools-lab.com/en/salary-calculator"}, {"@type": "WebApplication", "name": "Credit Card Rewards Calculator 2026", "url": "https://freetools-lab.com/en/credit-card-rewards"}, {"@type": "WebApplication", "name": "UK mortgage calculator", "url": "https://freetools-lab.com/en/mortgage-uk"}, {"@type": "WebApplication", "name": "Mortgage Calculator 2026", "url": "https://freetools-lab.com/en/mortgage"}, {"@type": "WebApplication", "name": "Rent vs Buy Calculator 2026", "url": "https://freetools-lab.com/en/rent-vs-buy"}, {"@type": "WebApplication", "name": "SaaS ROI Calculator 2026", "url": "https://freetools-lab.com/en/saas-roi"}, {"@type": "WebApplication", "name": "AI Tools Comparison 2026", "url": "https://freetools-lab.com/en/ai-tools"}, {"@type": "WebApplication", "name": "Solar Panel ROI Calculator 2026", "url": "https://freetools-lab.com/en/solar-roi"}, {"@type": "WebApplication", "name": "Student Loan Calculator 2026", "url": "https://freetools-lab.com/en/student-loan"}, {"@type": "WebApplication", "name": "UK Self-Employed Tax Calculator 2026/27", "url": "https://freetools-lab.com/en/self-employed-uk"}, {"@type": "WebApplication", "name": "Calculadora Consumo Eléctrico 2026", "url": "https://freetools-lab.com/es/consumo-electrico"}, {"@type": "WebApplication", "name": "Calculadora ahorro bomba de calor", "url": "https://freetools-lab.com/es/bomba-calor"}, {"@type": "WebApplication", "name": "Simulador Nómina e IRPF España 2026", "url": "https://freetools-lab.com/es/nomina-irpf"}, {"@type": "WebApplication", "name": "Calculadora Gastos Compra Piso 2026", "url": "https://freetools-lab.com/es/gastos-piso"}, {"@type": "WebApplication", "name": "Calculadora de Finiquito 2026", "url": "https://freetools-lab.com/es/finiquito"}, {"@type": "WebApplication", "name": "Simulateur Salaire Net Brut 2026", "url": "https://freetools-lab.com/fr/salaire-net-brut"}, {"@type": "WebApplication", "name": "Simulateur Impôt sur le Revenu 2026", "url": "https://freetools-lab.com/fr/impot-revenu"}]}</script>
-</body></html>
+
+</body>
+</html>

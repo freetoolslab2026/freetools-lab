@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["autocaravanas-nomade-nation"]={"category":"autocaravanas","brand":"NOMADE NATION","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["NEO.",2025,null,2200,4,"D",103.0,14.1,140,52000]]};

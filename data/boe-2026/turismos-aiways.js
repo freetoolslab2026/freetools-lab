@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-aiways"]={"category":"turismos","brand":"AIWAYS","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["U5 PRIME",2022,null,null,null,"Elc",150.0,29.11,204,40600],["U6 PRIME",2023,2024,null,null,"Elc",160.0,31.05,218,41700]]};

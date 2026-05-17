@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["autocaravanas-randger"]={"category":"autocaravanas","brand":"RANDGER","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["R559",2023,null,2300,4,"D",110.0,14.49,150,65600]]};

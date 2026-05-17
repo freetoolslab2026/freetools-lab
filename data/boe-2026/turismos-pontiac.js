@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-pontiac"]={"category":"turismos","brand":"PONTIAC","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["FIREBIRD 3.4i",1997,1998,3353,6,"G",109.0,21.36,148,22200],["TRANS AM 5.7i",1997,1998,5736,8,"G",205.0,33.07,279,23700]]};

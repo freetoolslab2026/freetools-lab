@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-fsm"]={"category":"turismos","brand":"FSM","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["650",2012,null,652,2,"G",18.0,5.15,24,4500]]};

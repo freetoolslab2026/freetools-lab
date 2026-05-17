@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-moke"]={"category":"turismos","brand":"MOKE","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["MOKE",2022,null,null,null,"Elc",11.0,2.14,15,31200]]};

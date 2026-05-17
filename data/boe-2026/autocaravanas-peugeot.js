@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["autocaravanas-peugeot"]={"category":"autocaravanas","brand":"PEUGEOT","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["CAPRON LIBERTÉ 690.",2012,null,2198,4,"D",96.0,0.0,130,104048]]};

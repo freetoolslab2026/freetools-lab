@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-jac"]={"category":"turismos","brand":"JAC","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["IEV7S",2021,null,null,null,"Elc",30.0,null,41,19200]]};

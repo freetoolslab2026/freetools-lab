@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-levc"]={"category":"turismos","brand":"LEVC","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["TX",2021,null,1477,3,"GyE",67.0,11.64,91,64000],["VN5",2021,null,1477,3,"GyE",67.0,11.64,91,55500]]};

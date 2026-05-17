@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-dongfeng"]={"category":"turismos","brand":"DONGFENG","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["Box Plus",2024,null,null,null,"Elc",70.0,null,95,16400]]};

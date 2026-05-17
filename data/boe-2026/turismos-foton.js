@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-foton"]={"category":"turismos","brand":"FOTON","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["Tunland V9 MHEV 8AT",2025,null,1968,4,"D",119.0,13.19,162,43500]]};

@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-livan"]={"category":"turismos","brand":"LIVAN","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["X6 Pro",2025,null,1499,4,"G",128.0,11.2,174,21300],["X3 Pro",2024,null,1498,4,"G",76.0,null,103,17200]]};

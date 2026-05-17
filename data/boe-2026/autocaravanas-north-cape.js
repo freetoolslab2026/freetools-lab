@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["autocaravanas-north-cape"]={"category":"autocaravanas","brand":"NORTH CAPE","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["ADVENTURE 6XH 4X4 (MAN).",2024,null,2000,4,"D",130.0,13.32,177,94500],["ADVENTURE 6XR 4X4 (MAN).",2024,null,2000,4,"D",132.0,13.32,180,88600]]};

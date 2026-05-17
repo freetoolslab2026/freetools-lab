@@ -1,0 +1,94 @@
+{
+  "records": 70931,
+  "files": 193,
+  "categories": {
+    "turismos": 61634,
+    "autocaravanas": 9252,
+    "motos-electricas": 14,
+    "motos-combustion": 13,
+    "quads": 12,
+    "buggys": 6
+  },
+  "topBrands": [
+    [
+      "MERCEDES",
+      5546
+    ],
+    [
+      "AUDI",
+      5197
+    ],
+    [
+      "VOLKSWAGEN",
+      4657
+    ],
+    [
+      "RENAULT",
+      3606
+    ],
+    [
+      "MAZDA",
+      3268
+    ],
+    [
+      "BMW",
+      3160
+    ],
+    [
+      "OPEL",
+      2857
+    ],
+    [
+      "VOLVO",
+      2769
+    ],
+    [
+      "PEUGEOT",
+      2607
+    ],
+    [
+      "CITROEN",
+      2417
+    ],
+    [
+      "NISSAN",
+      2402
+    ],
+    [
+      "SKODA",
+      2222
+    ],
+    [
+      "FORD",
+      2103
+    ],
+    [
+      "HYUNDAI",
+      1963
+    ],
+    [
+      "SEAT",
+      1887
+    ],
+    [
+      "TOYOTA",
+      1799
+    ],
+    [
+      "LAND ROVER",
+      1679
+    ],
+    [
+      "FIAT",
+      1303
+    ],
+    [
+      "KIA",
+      1091
+    ],
+    [
+      "DETHLEFFS",
+      998
+    ]
+  ]
+}

@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-qoros"]={"category":"turismos","brand":"QOROS","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["3 Sedan Turbo",2015,null,1598,4,"G",115.0,11.64,156,16200]]};

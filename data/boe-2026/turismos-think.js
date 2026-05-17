@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-think"]={"category":"turismos","brand":"THINK","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["CITY",2010,2012,0,0,"Elc",29.0,5.63,40,31700]]};

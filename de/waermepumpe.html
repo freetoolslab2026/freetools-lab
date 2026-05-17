@@ -1,16 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="de-DE">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Wärmepumpen-Rechner 2026 │ Kosten, Förderung und Amortisation</title>
-<meta name="description" content="Berechnen Sie Investitionskosten, Heizkosten, Förderung, Stromverbrauch und Amortisationszeit einer Wärmepumpe in Deutschland 2026.">
-<link rel="canonical" href="https://freetools-lab.com/de/waermepumpe">
-<link rel="alternate" hreflang="de-DE" href="https://freetools-lab.com/de/waermepumpe">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Enriqueta:wght@400;600&display=swap" rel="stylesheet">
-
+<meta content="Berechnen Sie Investitionskosten, Heizkosten, Förderung, Stromverbrauch und Amortisationszeit einer Wärmepumpe in Deutschland 2026." name="description"/>
+<link href="https://freetools-lab.com/de/waermepumpe" rel="canonical"/>
+<link href="https://freetools-lab.com/de/waermepumpe" hreflang="de-DE" rel="alternate"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&amp;family=Enriqueta:wght@400;600&amp;display=swap" rel="stylesheet"/>
 <script>
 window.dataLayer=window.dataLayer||[];
 function gtag(){dataLayer.push(arguments);}
@@ -18,12 +18,11 @@ gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied'});
 window.FTL_GA4_ID='G-PFNMBYBY8B';
 window.FTL_CLARITY_ID='wfrpg1mgir';
 </script>
-
 <!-- ADSENSE DEAKTIVIERT BIS REALE SLOTS KONFIGURIERT SIND
 <!-- AdSense desactivado hasta configurar slots reales:
 <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7702007610180764" crossorigin="anonymous"></script> -->
--->
--->
+--&gt;
+--&gt;
 
 <style>
 :root{--accent:#00C875;--navy:#1E3A5F;--outer:#E8EDF2;--line:#C2CDD9;--soft:#F4F7FA;--soft2:#EBF0F5;--text:#25364A;--muted:#64748B}
@@ -96,23 +95,19 @@ footer a{margin:0 8px;color:#fff}
 </style>
 </head>
 <body>
-
 <div class="page"><div class="shell">
-
 <nav class="topnav">
-<a href="https://freetools-lab.com/de/" class="logo">FreeTools Lab</a>
+<a class="logo" href="https://freetools-lab.com/de/">FreeTools Lab</a>
 <div class="navlinks">
 <a href="https://freetools-lab.com/de/">Rechner</a>
 <a href="https://freetools-lab.com/de/waermepumpe">Wärmepumpe</a>
 <a href="https://freetools-lab.com/de/ueber-uns">Über uns</a>
 </div>
 </nav>
-
 <div class="legal-band">
 <div class="legal-icon">!</div>
-<div><strong>Rechtlicher Hinweis:</strong> Dieses Tool dient ausschließlich Informationszwecken. Ergebnisse sind Schätzwerte<br>und stellen keine Rechts-, Steuer- oder Energieberatung dar. Prüfen Sie aktuelle Förderbedingungen.</div>
+<div><strong>Rechtlicher Hinweis:</strong> Dieses Tool dient ausschließlich Informationszwecken. Ergebnisse sind Schätzwerte<br/>und stellen keine Rechts-, Steuer- oder Energieberatung dar. Prüfen Sie aktuelle Förderbedingungen.</div>
 </div>
-
 <header class="hero">
 <span class="badge">Energie · Deutschland</span>
 <h1>Wärmepumpen-Rechner 2026</h1>
@@ -125,114 +120,84 @@ footer a{margin:0 8px;color:#fff}
 <div class="metric"><strong>Ohne Anmeldung</strong><span>Lokale Berechnung</span></div>
 </div>
 </header>
-
 <div class="content-grid"><main class="main">
-
 <section class="panel">
 <h2 class="section-title">Gebäude und Anlage</h2>
 <div class="input-grid">
-<div><label for="heatDemand">Jährlicher Wärmebedarf (kWh)</label><input id="heatDemand" type="number" value="18000" onfocus="this.select()"><div class="help">Typisches EFH: 12.000–25.000 kWh.</div></div>
+<div><label for="heatDemand">Jährlicher Wärmebedarf (kWh)</label><input id="heatDemand" onfocus="this.select()" type="number" value="18000"/><div class="help">Typisches EFH: 12.000–25.000 kWh.</div></div>
 <div><label for="systemType">Wärmepumpentyp</label><select id="systemType"><option value="3.8">Luft-Wasser · SCOP 3,8</option><option value="4.5">Sole-Wasser · SCOP 4,5</option><option value="5.0">Wasser-Wasser · SCOP 5,0</option></select></div>
-<div><label for="electricityPrice">Wärmepumpenstrom (€/kWh)</label><input id="electricityPrice" type="number" value="0.28" step="0.01" onfocus="this.select()"></div>
-<div><label for="gasPrice">Gaspreis (€/kWh)</label><input id="gasPrice" type="number" value="0.11" step="0.01" onfocus="this.select()"></div>
-<div><label for="investment">Investitionskosten (€)</label><input id="investment" type="number" value="28000" step="500" onfocus="this.select()"></div>
-<div><label for="subsidy">Förderquote (%)</label><input id="subsidy" type="number" value="35" step="1" onfocus="this.select()"><div class="help">BEG-Förderung 2026 je nach Voraussetzungen.</div></div>
-<div><label for="maintenanceWp">Wartung Wärmepumpe (€/Jahr)</label><input id="maintenanceWp" type="number" value="250" onfocus="this.select()"></div>
-<div><label for="maintenanceGas">Wartung Gasheizung (€/Jahr)</label><input id="maintenanceGas" type="number" value="420" onfocus="this.select()"></div>
+<div><label for="electricityPrice">Wärmepumpenstrom (€/kWh)</label><input id="electricityPrice" onfocus="this.select()" step="0.01" type="number" value="0.28"/></div>
+<div><label for="gasPrice">Gaspreis (€/kWh)</label><input id="gasPrice" onfocus="this.select()" step="0.01" type="number" value="0.11"/></div>
+<div><label for="investment">Investitionskosten (€)</label><input id="investment" onfocus="this.select()" step="500" type="number" value="28000"/></div>
+<div><label for="subsidy">Förderquote (%)</label><input id="subsidy" onfocus="this.select()" step="1" type="number" value="35"/><div class="help">BEG-Förderung 2026 je nach Voraussetzungen.</div></div>
+<div><label for="maintenanceWp">Wartung Wärmepumpe (€/Jahr)</label><input id="maintenanceWp" onfocus="this.select()" type="number" value="250"/></div>
+<div><label for="maintenanceGas">Wartung Gasheizung (€/Jahr)</label><input id="maintenanceGas" onfocus="this.select()" type="number" value="420"/></div>
 </div>
 </section>
-
-<p id="formError" class="error">Bitte gültige Werte eingeben.</p>
-
+<p class="error" id="formError">Bitte gültige Werte eingeben.</p>
 <button class="btn" id="calculateBtn">Wärmepumpe berechnen</button>
-
 <section class="result-box" id="results">
 <div class="big" id="mainResult">0 €</div>
 <p id="summary"></p>
-
 <div class="table-wrap">
 <table>
 <thead><tr><th>Kategorie</th><th>Wärmepumpe</th><th>Gasheizung</th><th>Differenz</th></tr></thead>
 <tbody id="resultRows"></tbody>
 </table>
 </div>
-
 <div class="answer" id="recommendation"></div>
 </section>
-
 <section class="answer">
-<strong>Lohnt sich eine Wärmepumpe?</strong><br>
+<strong>Lohnt sich eine Wärmepumpe?</strong><br/>
 Eine Wärmepumpe lohnt sich meist dann, wenn das Gebäude einen moderaten Wärmebedarf hat, niedrige Vorlauftemperaturen möglich sind und ein günstiger Wärmepumpenstromtarif genutzt wird. Hohe Förderquoten verkürzen die Amortisationszeit deutlich.
 </section>
-
 <section>
 <h2 class="section-title">FAQ</h2>
-
 <div class="faq-item"><button class="faq-q">Was bedeutet SCOP?<span>+</span></button><div class="faq-a">SCOP beschreibt die reale Jahresarbeitszahl der Wärmepumpe inklusive saisonaler Schwankungen.</div></div>
-
 <div class="faq-item"><button class="faq-q">Sind BAFA/BEG-Förderungen enthalten?<span>+</span></button><div class="faq-a">Ja. Die Förderquote ist editierbar, da Boni und Bedingungen sich ändern können.</div></div>
-
 <div class="faq-item"><button class="faq-q">Ist Gas immer teurer?<span>+</span></button><div class="faq-a">Nicht zwingend. Der Vergleich hängt von Strompreis, Gaspreis, Effizienz und Gebäudezustand ab.</div></div>
-
 <div class="faq-item"><button class="faq-q">Sind Photovoltaik-Effekte enthalten?<span>+</span></button><div class="faq-a">Nein. PV-Eigenverbrauch ist nicht standardmäßig enthalten und sollte separat kalkuliert werden.</div></div>
-
 <div class="faq-item"><button class="faq-q">Sind die Ergebnisse exakt?<span>+</span></button><div class="faq-a">Die Ergebnisse sind realistische Näherungen auf Basis aktueller Preise und Effizienzannahmen.</div></div>
-
 </section>
-
 <section class="beehiiv-box" id="beehiivBox" style="display:none">
-  <h3>Ergebnis speichern? Wir schicken es per E-Mail.</h3>
-  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
-  <iframe src="https://subscribe-forms.beehiiv.com/fd50de09-ab02-4593-93f8-b1f354e615e2"
-    class="beehiiv-embed" frameborder="0" scrolling="no"
-    style="width:100%;max-width:560px;height:291px;border-radius:8px;background:transparent;">
-  </iframe>
+<h3>Ergebnis speichern? Wir schicken es per E-Mail.</h3>
+<script async="" src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+<iframe class="beehiiv-embed" frameborder="0" scrolling="no" src="https://subscribe-forms.beehiiv.com/fd50de09-ab02-4593-93f8-b1f354e615e2" style="width:100%;max-width:560px;height:291px;border-radius:8px;background:transparent;">
+</iframe>
 </section>
 <a class="kofi" href="https://ko-fi.com/freetoolslab">Wenn dieses Tool hilfreich war, laden Sie uns auf einen Kaffee ein</a>
-
 <p style="font-size:12px;color:#64748B;margin-top:18px">
 FreeTools Lab Redaktion · Quellen: BAFA, BMWK, BEG EM · Überarbeitet 01/05/2026.
 <!-- Förderbedingungen und Strompreise regelmäßig prüfen. -->
 </p>
-
 </main>
-
 <aside class="sidebar">
 <div class="side-head"><strong>Ressourcen und Vergleiche</strong><span>Für Ihre Situation ausgewählt</span></div>
-
 <div class="side-body">
-<div class="resource-card resource-active"><strong>Passender Amazon-Ratgeber</strong><span>Externer Ratgeber passend zu diesem Rechner. FreeTools Lab kann eine Provision erhalten, ohne Zusatzkosten für Sie.</span><a class="resource-link" href="https://amzn.to/3PvdAhG" target="_blank" rel="sponsored nofollow noopener">Ratgeber ansehen</a></div>
-
-
+<div class="resource-card resource-active"><strong>Passender Amazon-Ratgeber</strong><span>Externer Ratgeber passend zu diesem Rechner. FreeTools Lab kann eine Provision erhalten, ohne Zusatzkosten für Sie.</span><a class="resource-link" href="https://amzn.to/3PvdAhG" rel="sponsored nofollow noopener" target="_blank">Ratgeber ansehen</a></div>
 <div class="resource-card" style="display:none">
 <strong>Wärmepumpen-Angebote</strong>
 <span>Affiliate-Slot deaktiviert bis finale Partnerlinks vorhanden sind.</span>
 <!-- RECURSO PENDIENTE: Awin — pendiente aprobación, buscar anunciante Wärmepumpen-Angebote en awin.com -->
 </div>
-
 <div class="resource-card" style="display:none">
 <strong>Photovoltaik + Speicher</strong>
 <span>Optionaler Vergleich für Eigenverbrauch und Heizstrom.</span>
 <!-- RECURSO PENDIENTE: Awin — pendiente aprobación, buscar anunciante Photovoltaik + Speicher en awin.com -->
 </div>
-
 <div class="tool-list">
 <a href="https://freetools-lab.com/de/waermepumpe">Wärmepumpe Rechner <span>›</span></a>
 <a href="https://freetools-lab.com/de/abfindungsrechner">Abfindungsrechner <span>›</span></a>
 </div>
-
 <div style="margin-top:18px">
 <div class="check"><span class="dot"></span><span>BEG-Förderung berücksichtigt</span></div>
 <div class="check"><span class="dot"></span><span>SCOP-Modell realistisch</span></div>
 <div class="check"><span class="dot"></span><span>Lokale Berechnung</span></div>
 <div class="check"><span class="dot"></span><span>Keine Registrierung</span></div>
 </div>
-
 </div>
 </aside>
-
 </div>
-
 <footer>
 <div>
 <a href="https://freetools-lab.com/de/datenschutz">Datenschutz</a> |
@@ -241,9 +206,7 @@ FreeTools Lab Redaktion · Quellen: BAFA, BMWK, BEG EM · Überarbeitet 01/05/20
 </div>
 <div>© 2026 FreeTools Lab · Kostenlose Finanz- und Energietools</div>
 </footer>
-
 </div></div>
-
 <script>
 const eur=new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:0});
 
@@ -317,15 +280,13 @@ document.querySelectorAll('.faq-q').forEach(btn=>{
  btn.addEventListener('click',()=>btn.closest('.faq-item').classList.toggle('open'));
 });
 </script>
-
-<div id="ftl-cookie-banner" class="cookie-banner">
+<div class="cookie-banner" id="ftl-cookie-banner">
 <p><strong>Cookies:</strong> Analyse-Cookies werden nur nach Zustimmung aktiviert.</p>
 <div class="cookie-actions">
-<button type="button" class="cookie-accept" id="ftl-accept-btn">Akzeptieren</button>
-<button type="button" class="cookie-reject" id="ftl-reject-btn">Nur notwendige</button>
+<button class="cookie-accept" id="ftl-accept-btn" type="button">Akzeptieren</button>
+<button class="cookie-reject" id="ftl-reject-btn" type="button">Nur notwendige</button>
 </div>
 </div>
-
 <script>
 (function(){
 function get(){try{return localStorage.getItem('ftl_cookie_consent');}catch(e){return null;}}
@@ -351,7 +312,6 @@ document.getElementById("ftl-accept-btn").addEventListener("click",function(){se
 document.getElementById("ftl-reject-btn").addEventListener("click",function(){set("rejected");deny();hide();});
 })();
 </script>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-fisker"]={"category":"turismos","brand":"FISKER","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["KARMA",2012,null,1998,4,"GyE",300.0,58.23,408,72300]]};

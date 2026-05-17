@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-aro"]={"category":"turismos","brand":"ARO","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["ARO 10.4 / 10.6 / 10.9",1998,2000,1870,4,"D",50.0,12.79,68,9000]]};

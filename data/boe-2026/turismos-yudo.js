@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-yudo"]={"category":"turismos","brand":"YUDO","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["3 ELITE",2023,null,null,null,"Elc",70.0,13.59,95,20800]]};

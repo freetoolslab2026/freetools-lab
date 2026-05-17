@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-daimler"]={"category":"turismos","brand":"DAIMLER","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["DAIMlER XJ 4.0 V8 Aut",1997,2003,3996,8,"G",213.0,26.63,290,61200],["DAIMlER XJ V8 SUPER 8 S/C Aut",1997,2003,3996,8,"G",272.0,26.63,370,76400]]};

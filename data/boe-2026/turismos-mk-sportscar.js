@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-mk-sportscar"]={"category":"turismos","brand":"MK SPORTSCAR","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["INDY",2014,null,1299,4,"G",129.0,10.28,175,12400]]};

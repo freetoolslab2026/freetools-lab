@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-emc"]={"category":"turismos","brand":"EMC","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["WAVE 3 1.5 MT",2022,null,1499,4,"G",83.0,11.2,113,20400],["WAVE 3 1.5T CVT",2022,null,1499,4,"G",108.0,11.2,147,22800]]};

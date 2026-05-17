@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-cenntro"]={"category":"turismos","brand":"CENNTRO","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["LOGISTAR 200 VAN",2022,null,null,null,"Elc",60.0,11.65,81,32000]]};

@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["autocaravanas-safariways"]={"category":"autocaravanas","brand":"SAFARIWAYS","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["NAIROBI (FORD EDDCHS).",1992,null,2496,4,"D",51.0,15.21,69,35500],["SYDNEY 6P (FIAT 280 MSX).",1993,null,1929,4,"D",60.0,13.03,82,38700]]};

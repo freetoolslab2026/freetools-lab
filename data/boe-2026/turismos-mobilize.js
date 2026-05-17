@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-mobilize"]={"category":"turismos","brand":"MOBILIZE","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["LIMO",2022,null,null,null,"Elc",37.0,7.18,50,42800]]};

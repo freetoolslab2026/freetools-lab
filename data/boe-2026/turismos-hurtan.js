@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-hurtan"]={"category":"turismos","brand":"HURTAN","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["AUTHOR 2.4",2018,null,2429,4,"G",105.0,14.97,143,36300],["AUTHOR 2.4 Turbo",2018,null,2429,4,"G",164.0,14.97,223,39400]]};

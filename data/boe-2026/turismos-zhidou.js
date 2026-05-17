@@ -1,0 +1,1 @@
+window.FTL_BOE_2026=window.FTL_BOE_2026||{};window.FTL_BOE_2026["turismos-zhidou"]={"category":"turismos","brand":"ZHIDOU","columns":["modelo","inicio","fin","cc","cilindros","motor","kw","cvf","cv","valor"],"rows":[["ZHIDOU (ZD) D2S",2020,null,null,null,"Elc",17.0,3.3,23,18500],["ZHIDOU (ZD) D2S",2020,null,null,null,"Elc",27.0,5.24,37,20700]]};

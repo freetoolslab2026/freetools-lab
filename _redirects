@@ -1,0 +1,4 @@
+/es/gastos-piso /es/gastos-compra-vivienda 301
+/es/gastos-piso.html /es/gastos-compra-vivienda.html 301
+/es/articulos/gastos-compra-piso/* /es/articulos/gastos-compra-vivienda/:splat 301
+
